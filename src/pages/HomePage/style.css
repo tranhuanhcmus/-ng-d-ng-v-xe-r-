@@ -1,0 +1,24 @@
+header {
+    background-color: #e6f5ff;
+    padding: 1rem 0;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #7c8db0;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+.logo-container>img {
+    height: 40px;
+}
+
+header .login-btn {
+    background-color: #6d6def;
+    color: white;
+}
