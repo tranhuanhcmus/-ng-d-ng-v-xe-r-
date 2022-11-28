@@ -15,6 +15,7 @@ const hbs = create({
     layoutsDir: path.join(__dirname, "views/layout"),
     defaultLayout: "main",
     partialsDir: path.join(__dirname, "views/partials"),
+    helpers: {},
 });
 // view engine setup
 app.engine("handlebars", hbs.engine);
