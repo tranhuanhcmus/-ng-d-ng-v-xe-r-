@@ -5,6 +5,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var { create } = require("express-handlebars");
 var BlogsRoute = require("./routes/blogs");
+var indexRoute = require("./routes/index.js");
 
 var app = express();
 
@@ -29,11 +30,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/blogs", BlogsRoute);
+app.use("/", indexRoute);
 
 // routes
 app.get("/", (req, res) => {
-    res.redirect("/blogs");
+    res.redirect("/home");
 });
+
 
 // 404 page
 app.use((req, res) => {
