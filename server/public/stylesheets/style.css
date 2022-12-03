@@ -1,3 +1,218 @@
+body {
+  font-family: Poppins;
+}
 
+.bg-box {
+  background-color: #E5F2FC;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.bg-box label {
+  color: black;
+}
+.bg-box h1 {
+  color: #605dec;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+}
+.bg-box .img-bg {
+  position: absolute;
+  width: 100vw;
+  object-fit: cover;
+  height: 80vh;
+  z-index: 10;
+  opacity: 0.3;
+}
+
+.groupbox {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  z-index: 20;
+}
+.groupbox .img-bg {
+  top: -25%;
+  left: -80%;
+}
+.groupbox h1 {
+  color: #605dec;
+  color: #605dec;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.groupbox .btn-primary {
+  background-color: #605dec;
+  border-radius: 20px;
+}
+
+.info-box {
+  z-index: 20;
+}
+.info-box h2 {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.ttdh {
+  justify-content: flex-start;
+}
+
+.bg-box-info {
+  height: 60vh;
+  width: 70vw;
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.info-box {
+  padding: 2rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+}
+.info-box section {
+  display: flex;
+  width: 100%;
+}
+.info-box .QRcode img {
+  width: 100%;
+  object-fit: cover;
+}
+.info-box .interaction {
+  display: flex;
+  width: 60%;
+  justify-content: space-around;
+}
+.info-box .interaction .btn-download {
+  background-color: #b881f9;
+}
+.info-box .interaction .btn-email {
+  background-color: #ffc700;
+}
+.info-box .interaction .btn-pdf {
+  background-color: #f28708;
+}
+
+.ttdh {
+  justify-content: flex-start;
+}
+
+.qna {
+  text-align: justify;
+  background-color: #e6f5ff;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.qna .chc {
+  background-color: #605dec;
+  width: 20vh;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  color: white;
+}
+
+.success {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2rem;
+  backdrop-filter: blur(10px);
+  z-index: 30;
+  width: 100vw;
+  object-fit: cover;
+  height: 100vh;
+  font-weight: bold;
+  color: green;
+}
+.success button {
+  border-radius: 10px;
+  background-color: #605dec;
+  color: #ffc700;
+  padding: auto;
+}
+
+.failure {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 2rem;
+  backdrop-filter: blur(10px);
+  z-index: 30;
+  width: 100vw;
+  object-fit: cover;
+  height: 100vh;
+  font-weight: bold;
+  color: red;
+}
+.failure button {
+  border-radius: 10px;
+  background-color: #605dec;
+  color: #ffc700;
+  padding: auto;
+}
+
+.payment-group {
+  flex-wrap: nowrap;
+}
+.payment-group .option-method {
+  border-radius: 20px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.payment-group .option-method div {
+  border-bottom: 1px solid black;
+  font-size: 20px;
+}
+.payment-group .payment-info .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 20px;
+  border: 2px solid black;
+  height: 65vh;
+}
+.payment-group .payment-info ul {
+  margin: 0;
+}
+.payment-group .payment-info .sum {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.payment-group .payment-info .btn-primary {
+  display: block;
+  margin: auto;
+  width: 80%;
+  background-color: #605dec;
+  color: #ffc700;
+}
+.payment-group .payment-info .coupon {
+  background-color: #e6f5ff;
+}
 
 /*# sourceMappingURL=style.css.map */
