@@ -1,6 +1,7 @@
 @use 'root.scss';
+@use 'sass:math';
 @import 'mixins.scss';
-@use "sass:math";
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
