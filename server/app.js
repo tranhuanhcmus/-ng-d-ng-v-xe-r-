@@ -42,4 +42,8 @@ app.get("/", (req, res) => {
 app.use((req, res) => {
     res.status(404).render("404", { title: "404 Error" });
 });
+
+app.get("/", (req, res) => {
+    res.redirect("/home");
+});
 module.exports = app;
