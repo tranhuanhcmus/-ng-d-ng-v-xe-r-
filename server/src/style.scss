@@ -1,5 +1,5 @@
-@use '_root.scss';
-@import '_mixins.scss';
+@use 'root.scss';
+@import 'mixins.scss';
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: root.$main-background;
