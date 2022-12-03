@@ -1,0 +1,62 @@
+<footer class="mt-5 pt-5">
+    <section class="container">
+        <div class="row">
+            <div class="col-3 container footer-col">
+                <div class="title ">
+                    Thông tin
+                </div>
+                <div>
+                    <div class="m-3"><a class='btn-light' href="#">Giới thiệu về chúng tôi</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Tư vấn sản phẩm</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Blog</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Bing chilling</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Lǎo gàn mā</a></div>
+                </div>
+            </div>
+            <div class="col-3 container footer-col">
+                <div class="title ">
+                    Liên hệ với chúng tôi
+                </div>
+                <div>
+                    <div class="m-3"><a class='btn-light' href="#">Giới thiệu về chúng tôi</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Tư vấn sản phẩm</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Blog</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Bing chilling</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Lǎo gàn mā</a></div>
+                </div>
+            </div>
+            <div class="col-3 container footer-col">
+                <div class="title ">
+                    Tổng đài hổ trợ
+                </div>
+                <div>
+                    <div class="m-3"><a class='btn-light' href="#">Giới thiệu về chúng tôi</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Tư vấn sản phẩm</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Blog</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Bing chilling</a></div>
+                    <div class="m-3"><a class='btn-light' href="#">Lǎo gàn mā</a></div>
+                </div>
+            </div>
+            <div class="col-3 container footer-col">
+                <div class="title ">
+                    Website cùng tập đoàn
+                </div>
+                <div>
+                    <div class="m-2"><a class='btn-light' href="#">Giới thiệu về chúng tôi</a></div>
+                    <div class="m-2"><a class='btn-light' href="#">Tư vấn sản phẩm</a></div>
+                    <div class="m-2"><a class='btn-light' href="#">Blog</a></div>
+                    <div class="m-2"><a class='btn-light' href="#">Bing chilling</a></div>
+                    <div class="m-2"><a class='btn-light' href="#">Lǎo gàn mā</a></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</footer>
+<hr>
+<div class="d-flex justify-content-center app p-3">
+    <i class="fa fa-twitter mx-3"></i>
+    <i class="fa fa-instagram mx-3"></i>
+    <i class="fa fa-facebook mx-3"></i>
+
+</div>
