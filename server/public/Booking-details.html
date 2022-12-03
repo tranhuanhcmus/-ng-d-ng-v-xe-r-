@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+</head>
+
+<body>
+    <div class="booking">
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-sm w-100">
+            <i class="fa-solid fa-location-dot mr-2"></i>Xem điểm đón trên bản
+            đồ
+          </button>
+            </div>
+        </div>
+        <div class="row booking__main">
+            <div class="w-100 booking__section">
+                <div class="booking__section-title">
+                    <div class="w-75">
+                        <i class="fa-solid fa-bus"></i>
+                        <span>Chặng: <b>Nha Trang - Sài Gòn</b> (273) </span>
+                    </div>
+                </div>
+
+                <div class="booking__product">
+                    <!-- Product header -->
+                    <article class="row product-header">
+                        <section class="col-6 text-center">
+                            <span><h1>Binh Minh Bus</h1></span>
+                            <p>Limousin giường phòng 22 chỗ</p>
+                            <span><h1>450.000</h1></span>
+                        </section>
+
+                        <section class="col-4 m-auto">
+                            <div class="d-flex justify-content-between">
+                                <span>VP Sài Gòn</span>
+                                <span>VP Nha Trang</span>
+                            </div>
+                            <div class="icon-section d-flex justify-content-around my-3 align-items-center">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-circle"></i>
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span>11:00</span>
+                                <span>21:00</span>
+                            </div>
+                        </section>
+                    </article>
+                    <img src="./images/Booking/garage.png" alt="" />
+                </div>
+
+                <div class="booking__steps">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/Booking/garage.png" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Booking/garage.png" class="d-block w-100" alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/Booking/garage.png" class="d-block w-100" alt="..." />
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
