@@ -24,6 +24,10 @@
     transform: translateX(0);
   }
 }
+.main-bg {
+  background-color: #e6f5ff;
+}
+
 form {
   gap: 1rem;
 }
@@ -32,9 +36,10 @@ form label {
   font-weight: 600;
 }
 
-.header-icon {
-  margin-left: 10%;
-  width: 10%;
+.card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-img {
@@ -48,10 +53,6 @@ form label {
   height: 70%;
 }
 
-.width-header {
-  width: 98%;
-}
-
 .hover-departure:hover .dropdown-menu {
   display: block;
 }
@@ -61,7 +62,7 @@ form label {
 }
 
 .trip-radien {
-  font-size: 6rem;
+  font-size: 3rem;
   background: -webkit-linear-gradient(#2a26d9, #605dec);
   font-weight: bold;
   -webkit-background-clip: text;
@@ -74,15 +75,19 @@ form label {
 }
 
 .product-item .img-radius {
-  width: 23.3333333333vw;
-  height: 23.3333333333vw;
+  width: 22vw;
+  height: 22vw;
   object-fit: cover;
   border-radius: 50%;
 }
 .product-item .img-square {
-  width: 23.3333333333vw;
-  height: 28.3333333333vw;
+  width: 22vw;
+  height: 27vw;
   object-fit: cover;
+}
+.product-item:hover {
+  box-shadow: rgb(38, 57, 77) 0px 5px 30px -10px;
+  cursor: pointer;
 }
 
 .comment .avatar .img-avatar {
@@ -118,8 +123,8 @@ form label {
   background-color: #e6f5ff;
 }
 
-.decription {
-  font-size: 10px;
+.description {
+  font-size: 0.5rem;
 }
 
 btn-primary {

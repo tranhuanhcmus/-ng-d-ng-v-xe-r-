@@ -3,6 +3,10 @@
 @import 'mixins.scss';
 body {}
 
+.main-bg {
+    background-color: root.$main-background;
+}
+
 form {
     gap: 1rem;
     label {
@@ -11,9 +15,8 @@ form {
     }
 }
 
-.header-icon {
-    margin-left: 10%;
-    width: 10%;
+.card-header {
+    @include flex-center;
 }
 
 .home-img {
@@ -27,10 +30,6 @@ form {
     height: 70%;
 }
 
-.width-header {
-    width: 98%;
-}
-
 .hover-departure:hover .dropdown-menu {
     display: block;
 }
@@ -40,7 +39,7 @@ form {
 }
 
 .trip-radien {
-    font-size: 6rem;
+    font-size: 3rem;
     background: -webkit-linear-gradient(root.$color-blue, root.$color-purple);
     font-weight: bold;
     -webkit-background-clip: text;
@@ -53,7 +52,7 @@ form {
 }
 
 .product-item {
-    $width: math.div(70vw, 3);
+    $width: math.div(66vw, 3);
     .img-radius {
         width: $width;
         height: $width;
@@ -64,6 +63,10 @@ form {
         width: $width;
         height: calc($width + 5vw);
         object-fit: cover;
+    }
+    &:hover {
+        box-shadow: root.$shadow-sm;
+        cursor: pointer;
     }
 }
 
@@ -109,8 +112,8 @@ form {
     background-color: root.$main-background;
 }
 
-.decription {
-    font-size: 10px;
+.description {
+    font-size: 0.5rem;
 }
 
 btn-primary {
