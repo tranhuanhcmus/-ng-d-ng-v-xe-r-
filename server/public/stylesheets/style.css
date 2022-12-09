@@ -97,42 +97,8 @@ form label {
   border-radius: 50%;
 }
 
-.footer-col {
-  color: #6e7491;
-}
-.footer-col .title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.footer-col btn-light {
-  font-weight: 50;
-}
-
-.main-comment .content-comment {
-  font-weight: 50;
-}
-.main-comment .address .date {
-  color: #605dec;
-}
-
-.rating .checked {
-  color: orange;
-}
-
-.main {
-  background-color: #e6f5ff;
-}
-
 .description {
   font-size: 0.5rem;
-}
-
-btn-primary {
-  background-color: #605dec !important;
-}
-
-.app .fa {
-  font-size: 40px;
 }
 
 .fa-google {
@@ -149,14 +115,7 @@ hr {
   text-align: center;
   height: 2px;
   border-width: 0;
-  color: #6e7491;
   background-color: gray;
-}
-
-hr:after {
-  background: #fff;
-  content: "or";
-  padding: 0 4px;
 }
 
 .bg-box {
@@ -708,17 +667,6 @@ hr:after {
   padding: 1rem;
 }
 
-.footer-col {
-  color: #6e7491;
-}
-.footer-col .title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.footer-col btn-light {
-  font-weight: 50;
-}
-
 .main-comment .content-comment {
   font-weight: 50;
 }
@@ -909,6 +857,83 @@ btn-primary {
 }
 .seat-icon:hover {
   transform: scale(1.1);
+}
+
+footer {
+  background: white;
+}
+footer i {
+  color: #6e7491;
+  font-size: 1.5rem;
+}
+footer i:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  cursor: pointer;
+}
+footer section h4 {
+  font-size: 1rem;
+  color: #6e7491;
+}
+footer section ul {
+  list-style: none;
+  padding: 0;
+  font-weight: lighter;
+}
+footer section ul li {
+  color: #6e7491;
+  margin: 0.5rem 0;
+}
+footer section ul li:hover {
+  cursor: pointer;
+  font-weight: 500;
+}
+footer section .app-icon {
+  margin: 1rem 0;
+  font-weight: normal;
+  font-style: normal;
+}
+footer section .app-icon .btn {
+  color: #fff;
+  background-color: #111;
+  border-color: #000;
+  padding: 15px 16px 5px 40px;
+  position: relative;
+  font-weight: 600;
+}
+footer section .app-icon .btn-google:before {
+  content: "";
+  background-image: url(https://4.bp.blogspot.com/-52U3eP2JDM4/WSkIT1vbUxI/AAAAAAAArQA/iF1BeARv2To-2FGQU7V6UbNPivuv_lccACLcB/s30/nexus2cee_ic_launcher_play_store_new-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -15px;
+}
+footer section .app-icon .btn-appstore:before {
+  content: "";
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAAD8/Pz19fVKSkr5+fkqKiry8vIdHR3h4eGpqanz8/Pv7+9gYGDa2tro6OjFxcUvLy97e3ucnJxVVVWwsLC8vLwVFRWHh4eBgYG2trY0NDRNTU07Oztra2ulpaWRkZHS0tIMDAxpaWlcXFwiIiKUlJRAQEDCwsJycnIdkhQMAAAJqklEQVR4nO2diXqyOhCGI4gKRUAW9w137v8GD9ra+lcmmYFIxj7nuwDiKyGZzBbRYandcdRdx4eJhkcJDc/QrUU6ywJLCOEPNTyNHWFvnUS2+JS91/BAZoTd7dgX3/p7hOckcIT4u4S9jfsP358j3NqW+KU/tdKkwW+8Um6q4ck8CM/e0/u7Ku9qeDYLwqLqBZaKVhoezoHw5FcDivlRw9PNE/ayyhl61UbH840TLiOIT4iTjgFME1auoV/qxzpGMEwoAxSBjs3CMOFBBiguAx1jGCWUvkEhPC2DmCQc5VJAX8tnaJRwLgUUwULLKAYJEzmgGOsZxhxh/CEHtPVMUnOEXVfxCt2dnoFMEe7GCkA9JlvHHOGsrwB0eppGMkTYlW8Upea6hjJDOFGto0LoOPzeZIZwGaoANW0VHVOEylfoaDG6bzJC2FMtM2KjI2LxKSOEylfoLvUNZoJwB7otvmRNNY5mgnCreoUXPTb3p0wQyk+FQoQ6nPnfMkC4d+SATqJ1OAOEKos00uEl/VH7hAPFJPX1AhogLCAP99ccHWker33C6iDMXR/6jJkvtU44kPi4y2V0rX3A1gmXss8w1OS5eFTrhLLPMIw1eS4e1TrhCf4MAx1B7Se1TrgBAXOdttqPWif0IMDsRQO2TbjLqvlc/Yvol9omnFS68v1MR8S+Wm0THiusUiufvWANvattwt7leYXZvu4FdtonXPw2aYKtNr9htdomXP1DaI+Ll76/q9omfHR25/Hohd/fXa0TRna/77v5ePriyfmt1vfDSalWRzSdT/N6MSRcHYrpNil1msbrYbfpt6qFcDWcnTbZfHwZzzMvma67dRNhJoetFwWu/+FYV9l+6AZ5NE7ic/0f15iwuy1/Ulj+pLuB4lx/V36i++UH8TgInxOFSzl+GIyLmh6qZoRpFjrV5z3LcT0S5P7yIfejOn5U1PmN9QknXc+W/iQhPrwzat08DscKL/Fd2ZK8ENclXBRSj9K38tlS8VGO0kSVlvGoqCAelOsRrmbKOPy3Qq+A14lJOr0gX99d5UmExFiHcDKLSL/KzpNh5eRazTLK67vLuVBccjUI00gZwn2Sezn9ttJ2wyynP+hT/hxv89EJT3X+9vKPd6Ptw+xKN7kyW0GmAB1EpRKeI1UAVwLZD5K0nK7HdVa975EeNkemFBEJ40Z//E02cWUBhayoIRH21Ik+rWqmm3ClzLZrW1uEJUcglFVGmJKnjjbiCYf4Tb49OZly90cT7lUZFGbkZKolFUs4rLcLvl6WKkEMSSiNaxqWYu/HEXYZAwoht1JRhAuOi8yDpEdtFCG7ffCXApnjHEPIzJKpkMy4QRDOFKUf5rVp9g5TrvvEXdZUul8oCQfPAT9eChUZHErCpOlB7sVSVrSrCA+856g1b2qX9nhvFJbSKlUSFqYZ5NogAiRywgFvY8bDOMDlhLFpBqkyVIhLTqgKTBgV0tkmJdyahpBprMGbuGvuOnydcmzQVEY4Y7zZu+hcVBkh44WUUOgtIVzLywaMilBWIyEEMkE5KCBEgmHCFeNJSinKgAmnfA++pFJ9kBBKV2YgV0+Um7GHlFZhChLGbC22gJbVCBHu2DrYnC0JECRcsHXPUFsNQoQpW5uU2j0KImR7uHcPegj5foYXIiBEeGQY0b7JJjcjAAgXXK3ukFy9ABB2TZNAiqiAEOHaNAkk4mYIE3JdaCx6lQZAyHWh6ZMBIUKu+z39M4QIufqgajQFAQhNk0CqUUtbTTgxTQKpRmVJNeHINAmkGkVh1YQr0ySQ6IAAIVeTxtJGuDSNAsjXRpiaRgHkaiM8mEYBpI9wbxoF0P+E708Y/nlC+88T6tvx/yc0phoNoqsJh6ZJINVoNfFeNo0iLZ9AyNUurXPlRTXh2TQJpFwX4cI0CaQah4tqwoFpEkj6/KWmSUDRr4B6N8JcFyHX0JNwyR1OAEK2qSb0e7wAQr4p+uR7LwDCrWkQUAHVKQwQsjW9yek0YAyYa2hGiIh4voDi+HW7jrxe1LUGIOyxXUzxSfpywoHiTjSTsmkhtrfLGBLUqwXeLuvrKtKXCBEe+C415Y5B6ekHEZ4Z57HTboOCCI9807yvImS3gR7IrWkIqXx8DuYb5nnfFKHNU5CQfYkzdt8HCUdcE7++ZCXIzq1wJABs8c9FyEMGTDhj68m4C7egwoS8u+5cZTXt18a24uJbDuYtSggTXe3/Xif7pE4DkxAO2X+I12ZmypZ0EsIJ7x3xU9ZYVaonixvzdSk+qkl/GtU1flwk7/8hjf1zzfb+rXwvOfVLCXmfoB5kZ/BZQ0rINtj9LDeByoXkGSpv8iFe5eRAT3o54dtM06uAe6DlhGyzTipVHQFXdFFib30/CKgYUmSKTU3/bIKAXBsF4fINbNO7gGYZCkLmTsVH5YDjRpXPGL/NhgGdFVWEK+YOqW+FUCNaZU4qfKsmL3mQ+a0kZO43vcsHg4rqvOL3WGvgwLCacPgOZyhJIwJEbjh/n5uQ3bSLINzzjtFc5UhSFjH5/ayDpTe5Eo8bhpBrJduPZM2/UDUa3DcMX+aKQhFyf4nSKBSuzoa36Sav98IRDlkvp/JAIo7wyDgJTATyeDeyGoyzYaPIkEISTvjGvC+K6BO2oo/tTTp9VaYiumaRa7xU2ekTTdjjabsFymat+LrTNceOrbY65YRQWcvxKIxIpiUQ9vjtGDaiqzelOppf3jCmpJRU/83NPEXVW5IIF8zmKarpNa2GP2ZVSoMre6YR9jitp9K7yOoScuqB3UfetE7tNBGzCbd5yLoSKuHOY/Iport6k7uFTHjMUx9dN0Pvh7LiUE1j4dtH1Oj4wqE/bY7/uXV62pjfMkJCa4U6hOZbYaMSvBsQGt8VST1cahF2CqMGKq1Mth5hZ2vQRUy8HKEmYWdjbOPH32XVjNDYgorf6psSGspz9ynLaEPCnYn4PsK3po/QyB2l5LsfGhF2FuSIlOW7eR7dlLsheT2mX27RkJB45A+SIu2eV4vRTatzN91vL5RYAeHCPF2E+GiGExW9qprP3SDNsGcV6jahh7CzVls3lh3I//x99KHeXa0L6S6yHzUl7Iwi+Wu0A09tgyySXOEdCWvcGfCpxoTlTJXY4e5lqiyfu2kQj134r+pHlPsA/5UGws5yUx0+7UcJ5dNJT5fqKW9fZjX66d+lg7AzOSRPjHaeFNR7fUbl4vo0W12vwE0DQFoIyzXxXMwffls4nx1WyHr5fzVaxl7+vVH6UbLuUhqZVEgTYalJr1tMr4qH52ODWVXuIL1VOlyvh8tFryHdVf8BA7Ox7qPeVRoAAAAASUVORK5CYII=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -15px;
+}
+footer section .app-icon .btn:after {
+  content: "  Download from ";
+  position: absolute;
+  top: 5px;
+  left: 45px;
+  font-size: 0.6rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
