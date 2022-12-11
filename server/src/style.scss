@@ -686,31 +686,27 @@ btn-primary {
     }
 }
 
-.backgroundGray {
-    background-color: rgba(root.$color-gray, 0.2);
-    // display: none; /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
+.backgroundGray{
+   
+    background-color: rgba(root.$color-gray,0.2);
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
     padding-top: 50px;
 }
-
-.homePage {
+.homePage{
     overflow: clip;
 }
 
-.backgroundGray {
-    background-color: rgba(root.$color-gray, 0.2);
+#id02{
+    display: none;
 }
+
 
 .carousel-inner {
     padding-bottom: 10%;
