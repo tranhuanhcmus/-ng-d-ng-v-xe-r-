@@ -1,640 +1,770 @@
 <section>
-   <div class="booking">
-        <div class="row">
-            <div class="col-3">
-                <button class="btn btn-sm w-100">
-            <i class="fa-solid fa-location-dot mr-2"></i>Xem điểm đón trên bản
-            đồ
-          </button>
-            </div>
+  <div class="booking">
+    <div class="row pt-4">
+      <div class="col-3">
+        <button class="btn btn-sm w-100">
+          <i class="fa-solid fa-location-dot mr-2"></i>Xem điểm đón trên bản đồ
+        </button>
+      </div>
+    </div>
+    <div class="row booking__main">
+      <div class="col-3 booking__section">
+        <div class="booking__section-controls">
+          <div>
+            <i class="fa-solid fa-filter"></i>
+            <span>Bộ lọc</span>
+          </div>
+
+          <span class="reset-btn">Lọc</span>
+          <span class="filter-btn">Reset</span>
         </div>
-        <div class="row booking__main">
-            <div class="col-3 booking__section">
-                <div class="booking__section-controls">
-                    <div>
-                        <i class="fa-solid fa-filter"></i>
-                        <span>Bộ lọc</span>
-                    </div>
 
-                    <span class="reset-btn">Lọc</span>
-                    <span class="filter-btn">Reset</span>
-                </div>
+        <div class="options-container">
+          <div class="option-box">
+            <span class="option-title mb-2"> Giờ đi </span>
 
-                <div class="options-container">
-                    <div class="option-box">
-                        <span class="option-title mb-2"> Giờ đi </span>
-
-                        <div class="col-6 p-1">
-                            <section class="active">
-                                Sáng sớm (2)<br /> 0:00-6:00
-                            </section>
-                        </div>
-                        <div class="col-6 p-1">
-                            <section>
-                                Sáng sớm (2)<br /> 0:00-6:00
-                            </section>
-                        </div>
-                        <div class="col-6 p-1">
-                            <section>
-                                Sáng sớm (2)<br /> 0:00-6:00
-                            </section>
-                        </div>
-                        <div class="col-6 p-1">
-                            <section>
-                                Sáng sớm (2)<br /> 0:00-6:00
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="option-box">
-                        <span class="option-title mb-2"> Giá vé </span>
-                        <input type="range" name="price" min="0" max="100" value="10" />
-                        <div class="d-flex justify-content-between w-75 m-auto">
-                            <span>0 VND</span>
-                            <span>100.000 VND </span>
-                        </div>
-                        <span class="option-title my-2"> Số ghế trống </span>
-
-                        <input class="m-auto text-center rounded-sm w-50" type="number" min="1" />
-                    </div>
-                    <div class="option-box">
-                        <span class="option-title mb-2"> Nhà xe </span>
-
-                        <input class="m-auto rounded-sm w-100 px-2 text-secondary" type="text" placeholder="Tên nhà xe" />
-
-                        <div class="check-list my-2 w-100 text-left">
-                            <div class="check-item">
-                                <input type="checkbox" id="garage-1" name="garage-1" value="An Phu Business" />
-                                <label for="garage-1"> An Phu Business (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="garage-1" name="garage-1" value="An Phu Business" />
-                                <label for="garage-1"> An Phu Business (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="garage-1" name="garage-1" value="An Phu Business" />
-                                <label for="garage-1"> An Phu Business (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="garage-1" name="garage-1" value="An Phu Business" />
-                                <label for="garage-1"> An Phu Business (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="garage-1" name="garage-1" value="An Phu Business" />
-                                <label for="garage-1"> An Phu Business (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="garage-1" name="garage-1" value="An Phu Business" />
-                                <label for="garage-1"> An Phu Business (3)</label><br />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="option-box">
-                        <span class="option-title mb-2"> Điểm đón</span>
-
-                        <input class="m-auto rounded-sm w-100 px-2 text-secondary" type="text" placeholder="Tên điểm đón" />
-
-                        <div class="check-list my-2 w-100 text-left">
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="option-box">
-                        <span class="option-title mb-2"> Điểm trả</span>
-
-                        <input class="m-auto rounded-sm w-100 px-2 text-secondary" type="text" placeholder="Tên điểm trả" />
-
-                        <div class="check-list my-2 w-100 text-left">
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Thủ Đức (3)</label><br />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="option-box">
-                        <span class="option-title mb-2"> Loại giường</span>
-
-                        <div class="my-2 w-75 text-left m-auto">
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Giường nằm</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Giường phòng</label><br />
-                            </div>
-                            <div class="check-item">
-                                <input type="checkbox" id="location-1" name="location-1" value="Thủ Đức" />
-                                <label for="location-1"> Ghế ngồi</label><br />
-                            </div>
-                        </div>
-
-                        <span class="option-title mb-2"> Đánh giá</span>
-
-                        <div class="rating w-75 m-auto">
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star text-warning"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-6 p-1">
+              <section class="active">
+                Sáng sớm (2)<br />
+                0:00-6:00
+              </section>
             </div>
-            <div class="col-9 booking__section">
-                <div class="booking__section-title">
-                    <div class="w-75">
-                        <i class="fa-solid fa-bus"></i>
-                        <span>Chặng: <b>Nha Trang -Sài Gòn</b> (273) </span>
-                    </div>
-                </div>
-                <div class="booking__section-sort">
-                    <span><b>Sắp xếp theo:</b></span>
-                    <span class="active">Giờ đi sớm nhất</span>
-                    <span>Giờ đi muộn nhất</span>
-                    <span>Giá tăng dần</span>
-                    <span>Giá giảm dần</span>
-                </div>
+            <div class="col-6 p-1">
+              <section>
+                Sáng sớm (2)<br />
+                0:00-6:00
+              </section>
+            </div>
+            <div class="col-6 p-1">
+              <section>
+                Sáng sớm (2)<br />
+                0:00-6:00
+              </section>
+            </div>
+            <div class="col-6 p-1">
+              <section>
+                Sáng sớm (2)<br />
+                0:00-6:00
+              </section>
+            </div>
+          </div>
 
-                <div class="booking-list">
-                    <div class="booking-list__item">
-                        <div class="col-5">
-                            <img src="./images/Booking/garage.png" alt="garage" />
-                            <span>Limousin giường phòng 22 chỗ</span>
-                            <a href="/Booking-details">Thông tin chi tiết</a>
-                        </div>
-                        <div class="col-7">
-                            <section class="d-flex align-items-center justify-content-around">
-                                <span><h1>Binh Minh Bus</h1></span>
-                                <div class="rating">
-                                    <i class="fa-solid fa-star text-warning"></i>
-                                    <b>4.5</b> (273)
-                                </div>
-                            </section>
-                            <section class="location m-auto">
-                                <div class="d-flex justify-content-between">
-                                    <span>VP Sài Gòn</span>
-                                    <span>VP Nha Trang</span>
-                                </div>
-                                <div class="icon-section d-flex justify-content-around my-3 align-items-center">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-circle"></i>
-                                    <i class="fa-solid fa-location-dot"></i>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <span>11:00</span>
-                                    <span>21:00</span>
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <div class="col-6 text-center">
-                                        <span class="price">450.000 đ</span>
-                                        <span class="old-price">600.000 đ</span>
-                                    </div>
-                                    <div class="col-6 d-flex justify-content-center align-items-center">
-                                        <a href="/Booking-details" class="btn btn-lg">Chọn chuyến</a
-                      >
-                    </div>
-                  </div>
-                </section>
+          <div class="option-box">
+            <span class="option-title mb-2"> Giá vé </span>
+            <input type="range" name="price" min="0" max="100" value="10" />
+            <div class="d-flex justify-content-between w-75 m-auto">
+              <span>0 VND</span>
+              <span>100.000 VND </span>
+            </div>
+            <span class="option-title my-2"> Số ghế trống </span>
+
+            <input
+              class="m-auto text-center rounded-sm w-50"
+              type="number"
+              min="1"
+            />
+          </div>
+          <div class="option-box">
+            <span class="option-title mb-2"> Nhà xe </span>
+
+            <input
+              class="m-auto rounded-sm w-100 px-2 text-secondary"
+              type="text"
+              placeholder="Tên nhà xe"
+            />
+
+            <div class="check-list my-2 w-100 text-left">
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="garage-1"
+                  name="garage-1"
+                  value="An Phu Business"
+                />
+                <label for="garage-1"> An Phu Business (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="garage-1"
+                  name="garage-1"
+                  value="An Phu Business"
+                />
+                <label for="garage-1"> An Phu Business (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="garage-1"
+                  name="garage-1"
+                  value="An Phu Business"
+                />
+                <label for="garage-1"> An Phu Business (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="garage-1"
+                  name="garage-1"
+                  value="An Phu Business"
+                />
+                <label for="garage-1"> An Phu Business (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="garage-1"
+                  name="garage-1"
+                  value="An Phu Business"
+                />
+                <label for="garage-1"> An Phu Business (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="garage-1"
+                  name="garage-1"
+                  value="An Phu Business"
+                />
+                <label for="garage-1"> An Phu Business (3)</label><br />
               </div>
             </div>
-            <div class="booking-list__item">
-              <div class="col-5">
-                <img src="./images/Booking/garage.png" alt="garage" />
-                <span>Limousin giường phòng 22 chỗ</span>
-                <a href="/Booking-details">Thông tin chi tiết</a>
-                                    </div>
-                                    <div class="col-7">
-                                        <section class="d-flex align-items-center justify-content-around">
-                                            <span><h1>Binh Minh Bus</h1></span>
-                                            <div class="rating">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <b>4.5</b> (273)
-                                            </div>
-                                        </section>
-                                        <section class="location m-auto">
-                                            <div class="d-flex justify-content-between">
-                                                <span>VP Sài Gòn</span>
-                                                <span>VP Nha Trang</span>
-                                            </div>
-                                            <div class="icon-section d-flex justify-content-around my-3 align-items-center">
-                                                <i class="fa-solid fa-location-dot"></i>
-                                                <i class="fa-solid fa-circle"></i>
-                                                <i class="fa-solid fa-circle"></i>
-                                                <i class="fa-solid fa-circle"></i>
-                                                <i class="fa-solid fa-circle"></i>
-                                                <i class="fa-solid fa-circle"></i>
-                                                <i class="fa-solid fa-circle"></i>
-                                                <i class="fa-solid fa-circle"></i>
-                                                <i class="fa-solid fa-location-dot"></i>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <span>11:00</span>
-                                                <span>21:00</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between">
-                                                <div class="col-6 text-center">
-                                                    <span class="price">450.000 đ</span>
-                                                    <span class="old-price">600.000 đ</span>
-                                                </div>
-                                                <div class="col-6 d-flex justify-content-center align-items-center">
-                                                    <a href="/Booking-details" class="btn btn-lg">Chọn chuyến</a
-                      >
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div class="booking-list__item">
-              <div class="col-5">
-                <img src="./images/Booking/garage.png" alt="garage" />
-                <span>Limousin giường phòng 22 chỗ</span>
-                <a href="/Booking-details">Thông tin chi tiết</a>
-                                                </div>
-                                                <div class="col-7">
-                                                    <section class="d-flex align-items-center justify-content-around">
-                                                        <span><h1>Binh Minh Bus</h1></span>
-                                                        <div class="rating">
-                                                            <i class="fa-solid fa-star text-warning"></i>
-                                                            <b>4.5</b> (273)
-                                                        </div>
-                                                    </section>
-                                                    <section class="location m-auto">
-                                                        <div class="d-flex justify-content-between">
-                                                            <span>VP Sài Gòn</span>
-                                                            <span>VP Nha Trang</span>
-                                                        </div>
-                                                        <div class="icon-section d-flex justify-content-around my-3 align-items-center">
-                                                            <i class="fa-solid fa-location-dot"></i>
-                                                            <i class="fa-solid fa-circle"></i>
-                                                            <i class="fa-solid fa-circle"></i>
-                                                            <i class="fa-solid fa-circle"></i>
-                                                            <i class="fa-solid fa-circle"></i>
-                                                            <i class="fa-solid fa-circle"></i>
-                                                            <i class="fa-solid fa-circle"></i>
-                                                            <i class="fa-solid fa-circle"></i>
-                                                            <i class="fa-solid fa-location-dot"></i>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between">
-                                                            <span>11:00</span>
-                                                            <span>21:00</span>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between">
-                                                            <div class="col-6 text-center">
-                                                                <span class="price">450.000 đ</span>
-                                                                <span class="old-price">600.000 đ</span>
-                                                            </div>
-                                                            <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                <a href="/Booking-details" class="btn btn-lg">Chọn chuyến</a
-                      >
-                    </div>
-                  </div>
-                </section>
-              </div>
-            </div>
-            <div class="booking-list__item">
-              <div class="col-5">
-                <img src="./images/Booking/garage.png" alt="garage" />
-                <span>Limousin giường phòng 22 chỗ</span>
-                <a href="/Booking-details"> Thông tin chi tiết </a>
-                                                            </div>
-                                                            <div class="col-7">
-                                                                <section class="d-flex align-items-center justify-content-around">
-                                                                    <span><h1>Binh Minh Bus</h1></span>
-                                                                    <div class="rating">
-                                                                        <i class="fa-solid fa-star text-warning"></i>
-                                                                        <b>4.5</b> (273)
-                                                                    </div>
-                                                                </section>
-                                                                <section class="location m-auto">
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>VP Sài Gòn</span>
-                                                                        <span>VP Nha Trang</span>
-                                                                    </div>
-                                                                    <div class="icon-section d-flex justify-content-around my-3 align-items-center">
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>11:00</span>
-                                                                        <span>21:00</span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <div class="col-6 text-center">
-                                                                            <span class="price">450.000 đ</span>
-                                                                            <span class="old-price">600.000 đ</span>
-                                                                        </div>
-                                                                        <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                            <a href="/Booking-details" class="btn btn-lg">
-                        Chọn chuyến
-                      </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <div class="booking-list__item">
-                                                            <div class="col-5">
-                                                                <img src="./images/Booking/garage.png" alt="garage" />
-                                                                <span>Limousin giường phòng 22 chỗ</span>
-                                                                <a href="/Booking-details">Thông tin chi tiết</a>
-                                                            </div>
-                                                            <div class="col-7">
-                                                                <section class="d-flex align-items-center justify-content-around">
-                                                                    <span><h1>Binh Minh Bus</h1></span>
-                                                                    <div class="rating">
-                                                                        <i class="fa-solid fa-star text-warning"></i>
-                                                                        <b>4.5</b> (273)
-                                                                    </div>
-                                                                </section>
-                                                                <section class="location m-auto">
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>VP Sài Gòn</span>
-                                                                        <span>VP Nha Trang</span>
-                                                                    </div>
-                                                                    <div class="icon-section d-flex justify-content-around my-3 align-items-center">
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>11:00</span>
-                                                                        <span>21:00</span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <div class="col-6 text-center">
-                                                                            <span class="price">450.000 đ</span>
-                                                                            <span class="old-price">600.000 đ</span>
-                                                                        </div>
-                                                                        <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                            <a href="/Booking-details" class="btn btn-lg">
-                        Chọn chuyến
-                      </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <div class="booking-list__item">
-                                                            <div class="col-5">
-                                                                <img src="./images/Booking/garage.png" alt="garage" />
-                                                                <span>Limousin giường phòng 22 chỗ</span>
-                                                                <a href="/Booking-details">Thông tin chi tiết</a>
-                                                            </div>
-                                                            <div class="col-7">
-                                                                <section class="d-flex align-items-center justify-content-around">
-                                                                    <span><h1>Binh Minh Bus</h1></span>
-                                                                    <div class="rating">
-                                                                        <i class="fa-solid fa-star text-warning"></i>
-                                                                        <b>4.5</b> (273)
-                                                                    </div>
-                                                                </section>
-                                                                <section class="location m-auto">
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>VP Sài Gòn</span>
-                                                                        <span>VP Nha Trang</span>
-                                                                    </div>
-                                                                    <div class="icon-section d-flex justify-content-around my-3 align-items-center">
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>11:00</span>
-                                                                        <span>21:00</span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <div class="col-6 text-center">
-                                                                            <span class="price">450.000 đ</span>
-                                                                            <span class="old-price">600.000 đ</span>
-                                                                        </div>
-                                                                        <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                            <a href="/Booking-details" class="btn btn-lg">
-                        Chọn chuyến
-                      </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <div class="booking-list__item">
-                                                            <div class="col-5">
-                                                                <img src="./images/Booking/garage.png" alt="garage" />
-                                                                <span>Limousin giường phòng 22 chỗ</span>
-                                                                <a href="/Booking-details">Thông tin chi tiết</a>
-                                                            </div>
-                                                            <div class="col-7">
-                                                                <section class="d-flex align-items-center justify-content-around">
-                                                                    <span><h1>Binh Minh Bus</h1></span>
-                                                                    <div class="rating">
-                                                                        <i class="fa-solid fa-star text-warning"></i>
-                                                                        <b>4.5</b> (273)
-                                                                    </div>
-                                                                </section>
-                                                                <section class="location m-auto">
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>VP Sài Gòn</span>
-                                                                        <span>VP Nha Trang</span>
-                                                                    </div>
-                                                                    <div class="icon-section d-flex justify-content-around my-3 align-items-center">
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>11:00</span>
-                                                                        <span>21:00</span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <div class="col-6 text-center">
-                                                                            <span class="price">450.000 đ</span>
-                                                                            <span class="old-price">600.000 đ</span>
-                                                                        </div>
-                                                                        <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                            <a href="/Booking-details" class="btn btn-lg">
-                        Chọn chuyến
-                      </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <div class="booking-list__item">
-                                                            <div class="col-5">
-                                                                <img src="./images/Booking/garage.png" alt="garage" />
-                                                                <span>Limousin giường phòng 22 chỗ</span>
-                                                                <a href="/Booking-details">Thông tin chi tiết</a>
-                                                            </div>
-                                                            <div class="col-7">
-                                                                <section class="d-flex align-items-center justify-content-around">
-                                                                    <span><h1>Binh Minh Bus</h1></span>
-                                                                    <div class="rating">
-                                                                        <i class="fa-solid fa-star text-warning"></i>
-                                                                        <b>4.5</b> (273)
-                                                                    </div>
-                                                                </section>
-                                                                <section class="location m-auto">
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>VP Sài Gòn</span>
-                                                                        <span>VP Nha Trang</span>
-                                                                    </div>
-                                                                    <div class="icon-section d-flex justify-content-around my-3 align-items-center">
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>11:00</span>
-                                                                        <span>21:00</span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <div class="col-6 text-center">
-                                                                            <span class="price">450.000 đ</span>
-                                                                            <span class="old-price">600.000 đ</span>
-                                                                        </div>
-                                                                        <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                            <a href="/Booking-details" class="btn btn-lg">
-                        Chọn chuyến
-                      </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <div class="booking-list__item">
-                                                            <div class="col-5">
-                                                                <img src="./images/Booking/garage.png" alt="garage" />
-                                                                <span>Limousin giường phòng 22 chỗ</span>
-                                                                <a href="/Booking-details">Thông tin chi tiết</a>
-                                                            </div>
-                                                            <div class="col-7">
-                                                                <section class="d-flex align-items-center justify-content-around">
-                                                                    <span><h1>Binh Minh Bus</h1></span>
-                                                                    <div class="rating">
-                                                                        <i class="fa-solid fa-star text-warning"></i>
-                                                                        <b>4.5</b> (273)
-                                                                    </div>
-                                                                </section>
-                                                                <section class="location m-auto">
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>VP Sài Gòn</span>
-                                                                        <span>VP Nha Trang</span>
-                                                                    </div>
-                                                                    <div class="icon-section d-flex justify-content-around my-3 align-items-center">
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-circle"></i>
-                                                                        <i class="fa-solid fa-location-dot"></i>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <span>11:00</span>
-                                                                        <span>21:00</span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-between">
-                                                                        <div class="col-6 text-center">
-                                                                            <span class="price">450.000 đ</span>
-                                                                            <span class="old-price">600.000 đ</span>
-                                                                        </div>
-                                                                        <div class="col-6 d-flex justify-content-center align-items-center">
-                                                                            <a href="/Booking-details" class="btn btn-lg">
-                        Chọn chuyến
-                      </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
+          </div>
+          <div class="option-box">
+            <span class="option-title mb-2"> Điểm đón</span>
 
-                                                        <div class="booking-list__item">
-                                                            <h1>No more trips...</h1>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
+            <input
+              class="m-auto rounded-sm w-100 px-2 text-secondary"
+              type="text"
+              placeholder="Tên điểm đón"
+            />
+
+            <div class="check-list my-2 w-100 text-left">
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+            </div>
+          </div>
+          <div class="option-box">
+            <span class="option-title mb-2"> Điểm trả</span>
+
+            <input
+              class="m-auto rounded-sm w-100 px-2 text-secondary"
+              type="text"
+              placeholder="Tên điểm trả"
+            />
+
+            <div class="check-list my-2 w-100 text-left">
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Thủ Đức (3)</label><br />
+              </div>
+            </div>
+          </div>
+          <div class="option-box">
+            <span class="option-title mb-2"> Loại giường</span>
+
+            <div class="my-2 w-75 text-left m-auto">
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Giường nằm</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Giường phòng</label><br />
+              </div>
+              <div class="check-item">
+                <input
+                  type="checkbox"
+                  id="location-1"
+                  name="location-1"
+                  value="Thủ Đức"
+                />
+                <label for="location-1"> Ghế ngồi</label><br />
+              </div>
+            </div>
+
+            <span class="option-title mb-2"> Đánh giá</span>
+
+            <div class="rating w-75 m-auto">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-9 booking__section">
+        <div class="booking__section-title">
+          <div class="w-75">
+            <i class="fa-solid fa-bus"></i>
+            <span>Chặng: <b>Nha Trang -Sài Gòn</b> (273) </span>
+          </div>
+        </div>
+        <div class="booking__section-sort">
+          <span><b>Sắp xếp theo:</b></span>
+          <span class="active">Giờ đi sớm nhất</span>
+          <span>Giờ đi muộn nhất</span>
+          <span>Giá tăng dần</span>
+          <span>Giá giảm dần</span>
+        </div>
+
+        <div class="booking-list">
+          <div class="booking-list__item">
+            <div class="col-5">
+              <img src="./images/Booking/garage.png" alt="garage" />
+              <span>Limousin giường phòng 22 chỗ</span>
+              <a href="/Booking-details">Thông tin chi tiết</a>
+            </div>
+            <div class="col-7">
+              <section class="d-flex align-items-center justify-content-around">
+                <span><h1>Binh Minh Bus</h1></span>
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <b>4.5</b>
+                  (273)
+                </div>
+              </section>
+              <section class="location m-auto">
+                <div class="d-flex justify-content-between">
+                  <span>VP Sài Gòn</span>
+                  <span>VP Nha Trang</span>
+                </div>
+                <div
+                  class="icon-section d-flex justify-content-around my-3 align-items-center"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>11:00</span>
+                  <span>21:00</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="col-6 text-center">
+                    <span class="price">450.000 đ</span>
+                    <span class="old-price">600.000 đ</span>
+                  </div>
+                  <div
+                    class="col-6 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="/Booking-details" class="btn btn-lg">Chọn chuyến</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="booking-list__item">
+            <div class="col-5">
+              <img src="./images/Booking/garage.png" alt="garage" />
+              <span>Limousin giường phòng 22 chỗ</span>
+              <a href="/Booking-details">Thông tin chi tiết</a>
+            </div>
+            <div class="col-7">
+              <section class="d-flex align-items-center justify-content-around">
+                <span><h1>Binh Minh Bus</h1></span>
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <b>4.5</b>
+                  (273)
+                </div>
+              </section>
+              <section class="location m-auto">
+                <div class="d-flex justify-content-between">
+                  <span>VP Sài Gòn</span>
+                  <span>VP Nha Trang</span>
+                </div>
+                <div
+                  class="icon-section d-flex justify-content-around my-3 align-items-center"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>11:00</span>
+                  <span>21:00</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="col-6 text-center">
+                    <span class="price">450.000 đ</span>
+                    <span class="old-price">600.000 đ</span>
+                  </div>
+                  <div
+                    class="col-6 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="/Booking-details" class="btn btn-lg">Chọn chuyến</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="booking-list__item">
+            <div class="col-5">
+              <img src="./images/Booking/garage.png" alt="garage" />
+              <span>Limousin giường phòng 22 chỗ</span>
+              <a href="/Booking-details">Thông tin chi tiết</a>
+            </div>
+            <div class="col-7">
+              <section class="d-flex align-items-center justify-content-around">
+                <span><h1>Binh Minh Bus</h1></span>
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <b>4.5</b>
+                  (273)
+                </div>
+              </section>
+              <section class="location m-auto">
+                <div class="d-flex justify-content-between">
+                  <span>VP Sài Gòn</span>
+                  <span>VP Nha Trang</span>
+                </div>
+                <div
+                  class="icon-section d-flex justify-content-around my-3 align-items-center"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>11:00</span>
+                  <span>21:00</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="col-6 text-center">
+                    <span class="price">450.000 đ</span>
+                    <span class="old-price">600.000 đ</span>
+                  </div>
+                  <div
+                    class="col-6 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="/Booking-details" class="btn btn-lg">Chọn chuyến</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="booking-list__item">
+            <div class="col-5">
+              <img src="./images/Booking/garage.png" alt="garage" />
+              <span>Limousin giường phòng 22 chỗ</span>
+              <a href="/Booking-details"> Thông tin chi tiết </a>
+            </div>
+            <div class="col-7">
+              <section class="d-flex align-items-center justify-content-around">
+                <span><h1>Binh Minh Bus</h1></span>
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <b>4.5</b>
+                  (273)
+                </div>
+              </section>
+              <section class="location m-auto">
+                <div class="d-flex justify-content-between">
+                  <span>VP Sài Gòn</span>
+                  <span>VP Nha Trang</span>
+                </div>
+                <div
+                  class="icon-section d-flex justify-content-around my-3 align-items-center"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>11:00</span>
+                  <span>21:00</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="col-6 text-center">
+                    <span class="price">450.000 đ</span>
+                    <span class="old-price">600.000 đ</span>
+                  </div>
+                  <div
+                    class="col-6 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="/Booking-details" class="btn btn-lg">
+                      Chọn chuyến
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="booking-list__item">
+            <div class="col-5">
+              <img src="./images/Booking/garage.png" alt="garage" />
+              <span>Limousin giường phòng 22 chỗ</span>
+              <a href="/Booking-details">Thông tin chi tiết</a>
+            </div>
+            <div class="col-7">
+              <section class="d-flex align-items-center justify-content-around">
+                <span><h1>Binh Minh Bus</h1></span>
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <b>4.5</b>
+                  (273)
+                </div>
+              </section>
+              <section class="location m-auto">
+                <div class="d-flex justify-content-between">
+                  <span>VP Sài Gòn</span>
+                  <span>VP Nha Trang</span>
+                </div>
+                <div
+                  class="icon-section d-flex justify-content-around my-3 align-items-center"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>11:00</span>
+                  <span>21:00</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="col-6 text-center">
+                    <span class="price">450.000 đ</span>
+                    <span class="old-price">600.000 đ</span>
+                  </div>
+                  <div
+                    class="col-6 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="/Booking-details" class="btn btn-lg">
+                      Chọn chuyến
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="booking-list__item">
+            <div class="col-5">
+              <img src="./images/Booking/garage.png" alt="garage" />
+              <span>Limousin giường phòng 22 chỗ</span>
+              <a href="/Booking-details">Thông tin chi tiết</a>
+            </div>
+            <div class="col-7">
+              <section class="d-flex align-items-center justify-content-around">
+                <span><h1>Binh Minh Bus</h1></span>
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <b>4.5</b>
+                  (273)
+                </div>
+              </section>
+              <section class="location m-auto">
+                <div class="d-flex justify-content-between">
+                  <span>VP Sài Gòn</span>
+                  <span>VP Nha Trang</span>
+                </div>
+                <div
+                  class="icon-section d-flex justify-content-around my-3 align-items-center"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>11:00</span>
+                  <span>21:00</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="col-6 text-center">
+                    <span class="price">450.000 đ</span>
+                    <span class="old-price">600.000 đ</span>
+                  </div>
+                  <div
+                    class="col-6 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="/Booking-details" class="btn btn-lg">
+                      Chọn chuyến
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="booking-list__item">
+            <div class="col-5">
+              <img src="./images/Booking/garage.png" alt="garage" />
+              <span>Limousin giường phòng 22 chỗ</span>
+              <a href="/Booking-details">Thông tin chi tiết</a>
+            </div>
+            <div class="col-7">
+              <section class="d-flex align-items-center justify-content-around">
+                <span><h1>Binh Minh Bus</h1></span>
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <b>4.5</b>
+                  (273)
+                </div>
+              </section>
+              <section class="location m-auto">
+                <div class="d-flex justify-content-between">
+                  <span>VP Sài Gòn</span>
+                  <span>VP Nha Trang</span>
+                </div>
+                <div
+                  class="icon-section d-flex justify-content-around my-3 align-items-center"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>11:00</span>
+                  <span>21:00</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="col-6 text-center">
+                    <span class="price">450.000 đ</span>
+                    <span class="old-price">600.000 đ</span>
+                  </div>
+                  <div
+                    class="col-6 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="/Booking-details" class="btn btn-lg">
+                      Chọn chuyến
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="booking-list__item">
+            <div class="col-5">
+              <img src="./images/Booking/garage.png" alt="garage" />
+              <span>Limousin giường phòng 22 chỗ</span>
+              <a href="/Booking-details">Thông tin chi tiết</a>
+            </div>
+            <div class="col-7">
+              <section class="d-flex align-items-center justify-content-around">
+                <span><h1>Binh Minh Bus</h1></span>
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <b>4.5</b>
+                  (273)
+                </div>
+              </section>
+              <section class="location m-auto">
+                <div class="d-flex justify-content-between">
+                  <span>VP Sài Gòn</span>
+                  <span>VP Nha Trang</span>
+                </div>
+                <div
+                  class="icon-section d-flex justify-content-around my-3 align-items-center"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>11:00</span>
+                  <span>21:00</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="col-6 text-center">
+                    <span class="price">450.000 đ</span>
+                    <span class="old-price">600.000 đ</span>
+                  </div>
+                  <div
+                    class="col-6 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="/Booking-details" class="btn btn-lg">
+                      Chọn chuyến
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="booking-list__item">
+            <div class="col-5">
+              <img src="./images/Booking/garage.png" alt="garage" />
+              <span>Limousin giường phòng 22 chỗ</span>
+              <a href="/Booking-details">Thông tin chi tiết</a>
+            </div>
+            <div class="col-7">
+              <section class="d-flex align-items-center justify-content-around">
+                <span><h1>Binh Minh Bus</h1></span>
+                <div class="rating">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <b>4.5</b>
+                  (273)
+                </div>
+              </section>
+              <section class="location m-auto">
+                <div class="d-flex justify-content-between">
+                  <span>VP Sài Gòn</span>
+                  <span>VP Nha Trang</span>
+                </div>
+                <div
+                  class="icon-section d-flex justify-content-around my-3 align-items-center"
+                >
+                  <i class="fa-solid fa-location-dot"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-circle"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span>11:00</span>
+                  <span>21:00</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div class="col-6 text-center">
+                    <span class="price">450.000 đ</span>
+                    <span class="old-price">600.000 đ</span>
+                  </div>
+                  <div
+                    class="col-6 d-flex justify-content-center align-items-center"
+                  >
+                    <a href="/Booking-details" class="btn btn-lg">
+                      Chọn chuyến
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="booking-list__item">
+            <h1>No more trips...</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </section>

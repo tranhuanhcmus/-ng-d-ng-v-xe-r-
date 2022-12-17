@@ -1,7 +1,9 @@
 @use 'root.scss';
 @use'sass:math';
 @import 'mixins.scss';
-body {}
+html {
+    font-size: 18px;
+}
 
 .main-bg {
     background-color: root.$main-background;
@@ -319,7 +321,6 @@ hr {
     box-sizing: border-box;
     margin: auto;
     width: 90%;
-    height: 100vh;
     button {
         padding: 0.5rem 0;
         color: white;
@@ -496,14 +497,15 @@ hr {
             h1 {
                 font-size: 1rem;
                 font-weight: bold;
+                margin: 0;
             }
             .rating {
                 text-align: center;
-                padding: 0.5rem 0.5rem;
-                font-size: 1rem;
+                padding: 0.25rem 0;
+                font-size: 0.8rem;
                 background-color: root.$color-purple;
                 border-radius: 20px;
-                min-width: 40%;
+                min-width: 30%;
                 color: white;
             }
             .location {
@@ -533,7 +535,6 @@ hr {
                     }
                     a {
                         padding: 0.5rem 0.5rem;
-                        width: 80%;
                         font-size: 1rem;
                         font-weight: bold;
                         background-color: root.$color-yellow;
@@ -686,27 +687,32 @@ btn-primary {
     }
 }
 
-.backgroundGray{
-   
-    background-color: rgba(root.$color-gray,0.2);
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+.backgroundGray {
+    background-color: rgba(root.$color-gray, 0.2);
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
     padding-top: 50px;
 }
-.homePage{
+
+.homePage {
     overflow: clip;
 }
 
-#id02{
+#id02 {
     display: none;
 }
-
 
 .carousel-inner {
     padding-bottom: 10%;

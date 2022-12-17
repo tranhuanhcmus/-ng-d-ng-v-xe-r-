@@ -24,6 +24,10 @@
     transform: translateX(0);
   }
 }
+html {
+  font-size: 18px;
+}
+
 .main-bg {
   background-color: #e6f5ff;
 }
@@ -336,7 +340,6 @@ hr {
   box-sizing: border-box;
   margin: auto;
   width: 90%;
-  height: 100vh;
 }
 .booking button {
   padding: 0.5rem 0;
@@ -532,14 +535,15 @@ hr {
 .booking-list .booking-list__item > div:last-child h1 {
   font-size: 1rem;
   font-weight: bold;
+  margin: 0;
 }
 .booking-list .booking-list__item > div:last-child .rating {
   text-align: center;
-  padding: 0.5rem 0.5rem;
-  font-size: 1rem;
+  padding: 0.25rem 0;
+  font-size: 0.8rem;
   background-color: #605dec;
   border-radius: 20px;
-  min-width: 40%;
+  min-width: 30%;
   color: white;
 }
 .booking-list .booking-list__item > div:last-child .location {
@@ -569,7 +573,6 @@ hr {
 }
 .booking-list .booking-list__item > div:last-child .location div:last-child a {
   padding: 0.5rem 0.5rem;
-  width: 80%;
   font-size: 1rem;
   font-weight: bold;
   background-color: #ffc700;
@@ -714,14 +717,20 @@ btn-primary {
 
 .backgroundGray {
   background-color: rgba(110, 116, 145, 0.2);
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
   padding-top: 50px;
 }
 
