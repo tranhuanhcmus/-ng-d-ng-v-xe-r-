@@ -1,0 +1,26 @@
+
+<div class="bg-box">
+    <div class="container d-flex justify-content-center">
+        <form class="m-auto">
+            <h1 class="text-center">Nhập thông tin đơn hàng</h1>
+            <div class="form-group">
+               <label for="formControlInput" class="form-label">Nhập Mã Đơn Hàng</label>
+                <input class="form-control" id="madh" required />
+           </div>
+        <div class="form-group mt-2">
+          <label for="formControlInput" class="form-label">Số Điện Thoại</label>
+                <input class="form-control" id="sdt" required />
+            </div>
+
+            <div class="d-grid gap-2 mt-4">
+                <button onclick="window.location.href='/ticketinfo';" class="bth btn-find btn-primary" type="submit">
+            Tìm Thông Tin Đơn Hàng
+          </button>
+            </div>
+
+            <h2 class="text-danger text-center mt-5 d-none">
+                <b>Đơn hàng không tồn tại</b>
+            </h2>
+        </form>
+    </div>
+    </div>
