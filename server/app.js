@@ -4,7 +4,6 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var { create } = require("express-handlebars");
-var BlogsRoute = require("./routes/blogs");
 var indexRoute = require("./routes/index.js");
 
 var app = express();
@@ -29,21 +28,22 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/blogs", BlogsRoute);
-app.use("/", indexRoute);
 
-// routes
-app.get("/", (req, res) => {
-    res.redirect("/home");
-});
+app.use('/', indexRoute)
 
+app.use('/qna',require("./routes/qnaRoute"))
+
+app.use('/Booking',require("./routes/BookingRoute"))
+
+app.use('/Booking-details',require("./routes/Booking-detailsRoute"))
+
+app.use('/findticked',require("./routes/findtickedRoute"))
+app.use('/ticketinfo',require("./routes/ticketinfoRoute"))
 
 // 404 page
 app.use((req, res) => {
     res.status(404).render("404", { title: "404 Error" });
 });
 
-app.get("/", (req, res) => {
-    res.redirect("/home");
-});
+
 module.exports = app;
