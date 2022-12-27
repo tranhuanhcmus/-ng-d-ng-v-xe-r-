@@ -11,7 +11,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+<<<<<<< HEAD
       CT_Chuyenxe.belongsTo(models.Chuyenxe, { foreignKey: 'chuyenxeId' });
+=======
+>>>>>>> 57224f4c944fe1a950b0910d382a080f7100b550
     }
   }
   CT_Chuyenxe.init({

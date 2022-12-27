@@ -3,28 +3,34 @@
     -webkit-transform: translateX(5px);
     transform: translateX(5px);
   }
+
   30% {
     -webkit-transform: translateX(-5px);
     transform: translateX(-5px);
   }
+
   50% {
     -webkit-transform: translateX(3px);
     transform: translateX(3px);
   }
+
   65% {
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
   }
+
   80% {
     -webkit-transform: translateX(2px);
     transform: translateX(2px);
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
-html {
+
+<<<<<<< HEAD html {
   font-size: 18px;
 }
 
@@ -35,6 +41,7 @@ html {
 form {
   gap: 1rem;
 }
+
 form label {
   font-size: 1rem;
   font-weight: 600;
@@ -84,11 +91,13 @@ form label {
   object-fit: cover;
   border-radius: 50%;
 }
+
 .product-item .img-square {
   width: 22vw;
   height: 27vw;
   object-fit: cover;
 }
+
 .product-item:hover {
   box-shadow: rgb(38, 57, 77) 0px 5px 30px -10px;
   cursor: pointer;
@@ -122,15 +131,22 @@ hr {
   background-color: gray;
 }
 
-.bg-box {
+=======body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6f5ff;
+}
+
+>>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a .bg-box {
   background-color: #E5F2FC;
   height: 100vh;
   width: 100%;
   display: flex;
 }
+
 .bg-box label {
   color: black;
 }
+
 .bg-box h1 {
   color: #605dec;
   text-transform: uppercase;
@@ -138,6 +154,7 @@ hr {
   font-weight: bold;
   align-items: center;
 }
+
 .bg-box .img-bg {
   position: absolute;
   width: 100vw;
@@ -154,10 +171,12 @@ hr {
   position: relative;
   z-index: 20;
 }
+
 .groupbox .img-bg {
   top: -25%;
   left: -80%;
 }
+
 .groupbox h1 {
   color: #605dec;
   color: #605dec;
@@ -165,780 +184,1351 @@ hr {
   font-size: 2rem;
   font-weight: bold;
 }
+
 .groupbox .btn-primary {
   background-color: #605dec;
   border-radius: 20px;
 }
 
-.info-box {
+<<<<<<< HEAD .info-box {
   z-index: 20;
 }
+
 .info-box h2 {
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
+  =======hr {
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 2px;
+    border-width: 0;
+    color: #6e7491;
+    background-color: gray;
+  }
 
-.ttdh {
-  justify-content: flex-start;
-}
+  hr .info-box {
+    z-index: 20;
+  }
 
-.bg-box-info {
-  height: 60vh;
-  width: 70vw;
-  margin: auto;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
+  hr .info-box h2 {
+    >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
 
-.info-box {
-  padding: 2rem;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 20px;
-  width: 100%;
-}
-.info-box section {
-  display: flex;
-  width: 100%;
-}
-.info-box .QRcode img {
-  width: 100%;
-  object-fit: cover;
-}
-.info-box .interaction {
-  display: flex;
-  width: 60%;
-  justify-content: space-around;
-}
-.info-box .interaction .btn-download {
-  background-color: #b881f9;
-}
-.info-box .interaction .btn-email {
-  background-color: #ffc700;
-}
-.info-box .interaction .btn-pdf {
-  background-color: #f28708;
-}
+  <<<<<<< HEAD .ttdh {
+    justify-content: flex-start;
+  }
 
-.ttdh {
-  justify-content: flex-start;
-}
+  .bg-box-info {
+    =======hr .ttdh {
+      justify-content: flex-start;
+    }
 
-.qna {
-  text-align: justify;
-  background-color: #e6f5ff;
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-}
-.qna .chc {
-  background-color: #605dec;
-  width: 20vh;
-  font-size: 20px;
-  border-radius: 10px;
-  text-align: center;
-  margin: auto;
-  color: white;
-}
+    hr .bg-box-info {
+      >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a height: 60vh;
+      width: 70vw;
+      margin: auto;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
 
-.success {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  font-size: 2rem;
-  backdrop-filter: blur(10px);
-  z-index: 30;
-  width: 100vw;
-  object-fit: cover;
-  height: 100vh;
-  font-weight: bold;
-  color: green;
-}
-.success button {
-  border-radius: 10px;
-  background-color: #605dec;
-  color: #ffc700;
-  padding: auto;
-}
+    <<<<<<< HEAD .info-box {
+      =======hr .info-box {
+        >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a padding: 2rem;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 20px;
+        width: 100%;
+      }
 
-.failure {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  font-size: 2rem;
-  backdrop-filter: blur(10px);
-  z-index: 30;
-  width: 100vw;
-  object-fit: cover;
-  height: 100vh;
-  font-weight: bold;
-  color: red;
-}
-.failure button {
-  border-radius: 10px;
-  background-color: #605dec;
-  color: #ffc700;
-  padding: auto;
-}
+      <<<<<<< HEAD .info-box section {
+        display: flex;
+        width: 100%;
+      }
 
-.payment-group {
-  flex-wrap: nowrap;
-}
-.payment-group .option-method {
-  border-radius: 20px;
-  border: 2px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.payment-group .option-method div {
-  border-bottom: 1px solid black;
-  font-size: 20px;
-}
-.payment-group .payment-info .info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border-radius: 20px;
-  border: 2px solid black;
-  height: 65vh;
-}
-.payment-group .payment-info ul {
-  margin: 0;
-  font-size: 0.8rem;
-}
-.payment-group .payment-info .sum {
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-.payment-group .payment-info .btn-primary {
-  display: block;
-  margin: auto;
-  width: 80%;
-  background-color: #605dec;
-  color: #ffc700;
-}
-.payment-group .payment-info .coupon {
-  background-color: #e6f5ff;
-}
+      .info-box .QRcode img {
+        width: 100%;
+        object-fit: cover;
+      }
 
-.booking {
-  box-sizing: border-box;
-  margin: auto;
-  width: 90%;
-}
-.booking button {
-  padding: 0.5rem 0;
-  color: white;
-  border-radius: 20px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  background-color: #605dec;
-}
-.booking button:hover {
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-.booking .booking__main {
-  margin-top: 1.5rem;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem;
-}
-.booking .booking__main .booking__section {
-  padding: 1rem;
-  background-color: #cfdcfc;
-  border-radius: 20px;
-}
-.booking .booking__main .booking__section-controls,
-.booking .booking__main .booking__section-title {
-  margin: auto;
-  display: flex;
-  padding: 0.5rem 1rem;
-  justify-content: space-between;
-}
-.booking .booking__main .booking__section-controls i,
-.booking .booking__main .booking__section-title i {
-  color: #5686e1;
-  font-size: 1rem;
-  margin: 0.2rem;
-}
-.booking .booking__main .booking__section-controls span,
-.booking .booking__main .booking__section-title span {
-  font-size: 1rem;
-}
-.booking .booking__main .booking__section-controls .reset-btn,
-.booking .booking__main .booking__section-controls .filter-btn,
-.booking .booking__main .booking__section-title .reset-btn,
-.booking .booking__main .booking__section-title .filter-btn {
-  font-weight: 600;
-  cursor: pointer;
-}
-.booking .booking__main .booking__section-controls .reset-btn:hover,
-.booking .booking__main .booking__section-controls .filter-btn:hover,
-.booking .booking__main .booking__section-title .reset-btn:hover,
-.booking .booking__main .booking__section-title .filter-btn:hover {
-  color: white;
-}
-.booking .booking__main .booking__section-title {
-  padding-bottom: 2rem;
-  border-bottom: solid 3px black;
-}
-.booking .booking__main .booking__section-title span,
-.booking .booking__main .booking__section-title i {
-  font-size: 1.5rem;
-}
-.booking .booking__main .booking__section-title span b,
-.booking .booking__main .booking__section-title i b {
-  margin-left: 2rem;
-}
-.booking .booking__main .booking__section-sort {
-  padding: 1rem;
-  display: flex;
-  justify-content: space-around;
-  border-bottom: solid 1px black;
-}
-.booking .booking__main .booking__section-sort span:not(:first-child) {
-  cursor: pointer;
-}
-.booking .booking__main .booking__section-sort span:not(:first-child):hover {
-  transform: scale(1.3);
-  transition: ease 0.2s;
-}
-.booking .booking__main .booking__section-sort .active {
-  color: #605dec;
-  font-weight: 600;
-}
-.booking .options-container {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-.booking .options-container .option-box {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: #dbe5fd;
-  border-radius: 20px;
-  padding: 0.75rem;
-  text-align: center;
-}
-.booking .options-container .option-box:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.booking .options-container .option-box input[type=range] {
-  width: 80%;
-  margin: auto;
-}
-.booking .options-container .option-box span {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #605dec;
-}
-.booking .options-container .option-box .option-title {
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 300;
-  color: #414091;
-}
-.booking .options-container .option-box section {
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0;
-  font-size: 0.6rem;
-  background-color: #fefeff;
-  border-radius: 20px;
-  color: grey;
-  cursor: pointer;
-}
-.booking .options-container .option-box section:hover {
-  background-color: #605dec;
-  color: white;
-  font-weight: 500;
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-.booking .options-container .option-box .active {
-  background-color: #605dec;
-  color: white;
-  font-weight: 500;
-}
-.booking .options-container .option-box .check-list {
-  height: 20vh;
-  overflow-y: scroll;
-}
-.booking .options-container .option-box .check-list label {
-  font-size: 0.8rem;
-}
-.booking .options-container .option-box .rating {
-  font-size: 1rem;
-}
-.booking .options-container .option-box i {
-  cursor: pointer;
-}
+      .info-box .interaction {
+        =======hr .info-box section {
+          display: flex;
+          width: 100%;
+        }
 
-.booking-list {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  max-height: 200vh;
-  overflow-y: scroll;
-}
-.booking-list .booking-list__item {
-  display: flex;
-  flex-wrap: nowrap;
-  width: 100%;
-  background-color: #fdfeff;
-  border-radius: 20px;
-  padding: 1rem;
-}
-.booking-list .booking-list__item:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.booking-list .booking-list__item > div:first-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  gap: 0.5rem;
-}
-.booking-list .booking-list__item > div:first-child a {
-  color: #605dec;
-}
-.booking-list .booking-list__item > div:first-child img {
-  box-shadow: rgb(38, 57, 77) 0px 5px 30px -10px;
-}
-.booking-list .booking-list__item > div:last-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.booking-list .booking-list__item > div:last-child h1 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
-}
-.booking-list .booking-list__item > div:last-child .rating {
-  text-align: center;
-  padding: 0.25rem 0;
-  font-size: 0.8rem;
-  background-color: #605dec;
-  border-radius: 20px;
-  min-width: 30%;
-  color: white;
-}
-.booking-list .booking-list__item > div:last-child .location {
-  display: flex;
-  gap: 0.1rem;
-  flex-direction: column;
-  color: #605dec;
-  font-size: 1rem;
-}
-.booking-list .booking-list__item > div:last-child .location span {
-  font-weight: bold;
-}
-.booking-list .booking-list__item > div:last-child .location .icon-section {
-  color: #a35af8;
-}
-.booking-list .booking-list__item > div:last-child .location .icon-section i:first-child,
-.booking-list .booking-list__item > div:last-child .location .icon-section i:last-child {
-  font-size: 2rem;
-}
-.booking-list .booking-list__item > div:last-child .location div:last-child .price {
-  font-size: 1.5rem;
-  color: #2a26d9;
-}
-.booking-list .booking-list__item > div:last-child .location div:last-child .old-price {
-  text-decoration: line-through;
-  color: #cdd5e3;
-}
-.booking-list .booking-list__item > div:last-child .location div:last-child a {
-  padding: 0.5rem 0.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  background-color: #ffc700;
-  color: black;
-}
-.booking-list .booking-list__item > div:last-child .location div:last-child a:hover {
-  color: #6e7491;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-.booking-list .booking-list__item:last-child {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e1eafe;
-}
-.booking-list .booking-list__item:last-child h1 {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.booking-list .booking-list__item img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-}
+        hr .info-box .QRcode img {
+          width: 100%;
+          object-fit: cover;
+        }
 
-.booking__product {
-  width: 100%;
-  background-color: #e6f5ff;
-  padding: 2rem;
-}
-.booking__product .product-header h1 {
-  font-weight: bold;
-  font-size: 3rem;
-  background: -webkit-linear-gradient(right, #605dec, #2a26d9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.booking__product .product-header p {
-  font-size: 2rem;
-  color: black;
-}
-.booking__product .product-header section:last-child {
-  background-color: #e6f5ff;
-  padding: 1rem;
-  border-radius: 20px;
-  color: #605dec;
-}
-.booking__product .product-header section:last-child span {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: black;
-}
-.booking__product .product-header section:last-child i:first-child,
-.booking__product .product-header section:last-child i:last-child {
-  font-size: 2.5rem;
-}
-.booking__product img {
-  display: block;
-  margin: 3rem auto;
-  border-radius: 0 30px;
-  width: 80%;
-  object-fit: cover;
-}
+        hr .info-box .interaction {
+          >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: flex;
+          width: 60%;
+          justify-content: space-around;
+        }
 
-.booking__steps {
-  background-color: #e6f5ff;
-}
-.booking__steps .carousel-indicators {
-  bottom: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto;
-}
-.booking__steps .carousel-indicators .active {
-  background-color: #2a26d9;
-}
-.booking__steps .carousel-indicators button {
-  border: none;
-  outline: none;
-  min-width: 3rem;
-  position: initial;
-  padding: 0.5rem 1rem;
-  color: #ffc700;
-}
-.booking__steps .carousel-indicators section {
-  max-width: 15rem;
-}
-.booking__steps .carousel-indicators section button {
-  background-color: #6e7491;
-  padding: 0.2rem;
-}
-.booking__steps .carousel-item {
-  padding: 1rem;
-}
+        <<<<<<< HEAD .info-box .interaction .btn-download {
+          background-color: #b881f9;
+        }
 
-.main-comment .content-comment {
-  font-weight: 50;
-}
-.main-comment .address .date {
-  color: #605dec;
-}
+        .info-box .interaction .btn-email {
+          background-color: #ffc700;
+        }
 
-.rating .checked {
-  color: orange;
-}
+        .info-box .interaction .btn-pdf {
+          background-color: #f28708;
+        }
 
-.main {
-  background-color: #e6f5ff;
-}
+        .ttdh {
+          justify-content: flex-start;
+        }
 
-.decription {
-  font-size: 10px;
-}
+        .qna {
+          =======hr .info-box .interaction .btn-download {
+            background-color: #b881f9;
+          }
 
-btn-primary {
-  background-color: #605dec !important;
-}
+          hr .info-box .interaction .btn-email {
+            background-color: #ffc700;
+          }
 
-.app .fa {
-  font-size: 40px;
-}
+          hr .info-box .interaction .btn-pdf {
+            background-color: #f28708;
+          }
 
-.fa-apple {
-  color: #979797;
-}
+          hr .ttdh {
+            justify-content: flex-start;
+          }
 
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
+          hr .qna {
+            >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a text-align: justify;
+            background-color: #e6f5ff;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+          }
 
-.button {
-  background-color: #605dec;
-}
-.button:hover {
-  opacity: 0.8;
-  background-color: #605dec;
-}
+          <<<<<<< HEAD .qna .chc {
+            =======hr .qna .chc {
+              >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a background-color: #605dec;
+              width: 20vh;
+              font-size: 20px;
+              border-radius: 10px;
+              text-align: center;
+              margin: auto;
+              color: white;
+            }
 
-.backgroundGray {
-  background-color: rgba(110, 116, 145, 0.2);
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  padding-top: 50px;
-}
+            <<<<<<< HEAD .success {
+              =======hr .success {
+                >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                font-size: 2rem;
+                backdrop-filter: blur(10px);
+                z-index: 30;
+                width: 100vw;
+                object-fit: cover;
+                height: 100vh;
+                font-weight: bold;
+                color: green;
+              }
 
-.homePage {
-  overflow: clip;
-}
+              <<<<<<< HEAD .success button {
+                =======hr .success button {
+                  >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a border-radius: 10px;
+                  background-color: #605dec;
+                  color: #ffc700;
+                  padding: auto;
+                }
 
-#id02 {
-  display: none;
-}
+                <<<<<<< HEAD .failure {
+                  =======hr .failure {
+                    >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    font-size: 2rem;
+                    backdrop-filter: blur(10px);
+                    z-index: 30;
+                    width: 100vw;
+                    object-fit: cover;
+                    height: 100vh;
+                    font-weight: bold;
+                    color: red;
+                  }
 
-.carousel-inner {
-  padding-bottom: 10%;
-}
-.carousel-inner h1 {
-  font-weight: bold;
-  font-size: 2rem;
-  color: #605dec;
-}
-.carousel-inner #step-1 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.carousel-inner #step-1 > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  background-color: #d9d9d9;
-  border-radius: 20px 20px 0px 0px;
-}
-.carousel-inner #step-1 > div:first-child {
-  flex-direction: column;
-  gap: 2rem;
-  background-color: transparent;
-}
-.carousel-inner #step-1 > div .seat-type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: start;
-}
-.carousel-inner #step-1 .seats-model {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.carousel-inner #step-1 .seats-model i {
-  font-size: 1.5rem;
-  color: #6e7491;
-}
-.carousel-inner #step-2 {
-  display: flex;
-  justify-content: center;
-}
-.carousel-inner #step-2 h3 {
-  text-align: center;
-  color: #605dec;
-}
-.carousel-inner #step-2 section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  max-height: 60vh;
-  overflow-y: scroll;
-  font-size: 1rem;
-}
-.carousel-inner #step-2 section input {
-  height: 1rem;
-  width: 1rem;
-}
-.carousel-inner #step-2 section label {
-  margin: 0;
-  margin-left: 0.5rem;
-}
-.carousel-inner #step-2 .location-item i {
-  color: #605dec;
-  font-size: 1.5rem;
-}
-.carousel-inner #step-3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-.carousel-inner #step-3 input {
-  padding: 1rem;
-  width: 100%;
-  height: 2rem;
-  background-color: white;
-  border-radius: 5px;
-  margin: 0.6rem 0;
-}
-.carousel-inner #step-3 h1,
-.carousel-inner #step-3 h2 {
-  font-size: 1.2rem;
-}
-.carousel-inner #step-3 h1::after {
-  content: "*";
-  color: red;
-  font-weight: bold;
-}
+                  <<<<<<< HEAD .failure button {
+                    =======hr .failure button {
+                      >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a border-radius: 10px;
+                      background-color: #605dec;
+                      color: #ffc700;
+                      padding: auto;
+                    }
 
-.seat-icon {
-  cursor: pointer;
-  background-color: white;
-  height: 3rem;
-  width: 1.5rem;
-  border-radius: 5px;
-  border: 1px solid black;
-  position: relative;
-  z-index: 0;
-}
-.seat-icon::before {
-  content: "";
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 1px solid black;
-  height: 0.5rem;
-  width: 1.25rem;
-  border-radius: 5px;
-}
-.seat-icon--select {
-  background-color: #affd7f;
-}
-.seat-icon--checked {
-  background-color: #6e7491;
-}
-.seat-icon:hover {
-  transform: scale(1.1);
-}
+                    <<<<<<< HEAD .payment-group {
+                      flex-wrap: nowrap;
+                    }
 
-footer {
-  background: white;
-}
-footer i {
-  color: #6e7491;
-  font-size: 1.5rem;
-}
-footer i:hover {
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  cursor: pointer;
-}
-footer section h4 {
-  font-size: 1rem;
-  color: #6e7491;
-}
-footer section ul {
-  list-style: none;
-  padding: 0;
-  font-weight: lighter;
-}
-footer section ul li {
-  color: #6e7491;
-  margin: 0.5rem 0;
-}
-footer section ul li:hover {
-  cursor: pointer;
-  font-weight: 500;
-}
-footer section .app-icon {
-  margin: 1rem 0;
-  font-weight: normal;
-  font-style: normal;
-}
-footer section .app-icon .btn {
-  color: #fff;
-  background-color: #111;
-  border-color: #000;
-  padding: 15px 16px 5px 40px;
-  position: relative;
-  font-weight: 600;
-}
-footer section .app-icon .btn-google:before {
-  content: "";
-  background-image: url(https://4.bp.blogspot.com/-52U3eP2JDM4/WSkIT1vbUxI/AAAAAAAArQA/iF1BeARv2To-2FGQU7V6UbNPivuv_lccACLcB/s30/nexus2cee_ic_launcher_play_store_new-1.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  margin-top: -15px;
-}
-footer section .app-icon .btn-appstore:before {
-  content: "";
-  background-image: url(data:image/png;base64,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);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: 6px;
-  top: 50%;
-  margin-top: -15px;
-}
-footer section .app-icon .btn:after {
-  content: "  Download from ";
-  position: absolute;
-  top: 5px;
-  left: 45px;
-  font-size: 0.6rem;
-  font-weight: 400;
-}
+                    .payment-group .option-method {
+                      =======hr .payment-group {
+                        flex-wrap: nowrap;
+                      }
 
-/*# sourceMappingURL=style.css.map */
+                      hr .payment-group .option-method {
+                        >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a border-radius: 20px;
+                        border: 2px solid black;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                      }
+
+                      <<<<<<< HEAD .payment-group .option-method div {
+                        border-bottom: 1px solid black;
+                        font-size: 20px;
+                      }
+
+                      .payment-group .payment-info .info {
+                        =======hr .payment-group .option-method div {
+                          border-bottom: 1px solid black;
+                          font-size: 20px;
+                        }
+
+                        hr .payment-group .payment-info .info {
+                          >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: flex;
+                          flex-direction: column;
+                          justify-content: space-around;
+                          border-radius: 20px;
+                          border: 2px solid black;
+                          height: 65vh;
+                        }
+
+                        <<<<<<< HEAD .payment-group .payment-info ul {
+                          margin: 0;
+                          font-size: 0.8rem;
+                        }
+
+                        .payment-group .payment-info .sum {
+                          font-weight: bold;
+                          font-size: 1.3rem;
+                        }
+
+                        .payment-group .payment-info .btn-primary {
+                          =======hr .payment-group .payment-info ul {
+                            margin: 0;
+                          }
+
+                          hr .payment-group .payment-info .sum {
+                            font-weight: bold;
+                            font-size: 1.3rem;
+                          }
+
+                          hr .payment-group .payment-info .btn-primary {
+                            >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: block;
+                            margin: auto;
+                            width: 80%;
+                            background-color: #605dec;
+                            color: #ffc700;
+                          }
+
+                          <<<<<<< HEAD .payment-group .payment-info .coupon {
+                            background-color: #e6f5ff;
+                          }
+
+                          .booking {
+                            box-sizing: border-box;
+                            margin: auto;
+                            width: 90%;
+                          }
+
+                          .booking button {
+                            =======hr .payment-group .payment-info .coupon {
+                              background-color: #e6f5ff;
+                            }
+
+                            hr .booking {
+                              box-sizing: border-box;
+                              margin: auto;
+                              width: 90%;
+                              height: 100vh;
+                            }
+
+                            hr .booking button {
+                              >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a padding: 0.5rem 0;
+                              color: white;
+                              border-radius: 20px;
+                              font-weight: 500;
+                              letter-spacing: 1px;
+                              background-color: #605dec;
+                            }
+
+                            <<<<<<< HEAD .booking button:hover {
+                              =======hr .booking button:hover {
+                                >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a -webkit-animation: swing 1s ease;
+                                animation: swing 1s ease;
+                                -webkit-animation-iteration-count: 1;
+                                animation-iteration-count: 1;
+                              }
+
+                              <<<<<<< HEAD .booking .booking__main {
+                                =======hr .booking .booking__main {
+                                  >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a margin-top: 1.5rem;
+                                  display: flex;
+                                  flex-wrap: nowrap;
+                                  gap: 1rem;
+                                }
+
+                                <<<<<<< HEAD .booking .booking__main .booking__section {
+                                  =======hr .booking .booking__main .booking__section {
+                                    >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a padding: 1rem;
+                                    background-color: #cfdcfc;
+                                    border-radius: 20px;
+                                  }
+
+                                  <<<<<<< HEAD .booking .booking__main .booking__section-controls,
+                                  .booking .booking__main .booking__section-title {
+
+                                    =======hr .booking .booking__main .booking__section-controls,
+                                    hr .booking .booking__main .booking__section-title {
+                                      >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a margin: auto;
+                                      display: flex;
+                                      padding: 0.5rem 1rem;
+                                      justify-content: space-between;
+                                    }
+
+                                    <<<<<<< HEAD .booking .booking__main .booking__section-controls i,
+                                    .booking .booking__main .booking__section-title i {
+
+                                      =======hr .booking .booking__main .booking__section-controls i,
+                                      hr .booking .booking__main .booking__section-title i {
+                                        >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a color: #5686e1;
+                                        font-size: 1rem;
+                                        margin: 0.2rem;
+                                      }
+
+                                      <<<<<<< HEAD .booking .booking__main .booking__section-controls span,
+                                      .booking .booking__main .booking__section-title span {
+                                        font-size: 1rem;
+                                      }
+
+                                      .booking .booking__main .booking__section-controls .reset-btn,
+                                      .booking .booking__main .booking__section-controls .filter-btn,
+                                      .booking .booking__main .booking__section-title .reset-btn,
+                                      .booking .booking__main .booking__section-title .filter-btn {
+                                        font-weight: 600;
+                                        cursor: pointer;
+                                      }
+
+                                      .booking .booking__main .booking__section-controls .reset-btn:hover,
+                                      .booking .booking__main .booking__section-controls .filter-btn:hover,
+                                      .booking .booking__main .booking__section-title .reset-btn:hover,
+                                      .booking .booking__main .booking__section-title .filter-btn:hover {
+                                        color: white;
+                                      }
+
+                                      .booking .booking__main .booking__section-title {
+                                        padding-bottom: 2rem;
+                                        border-bottom: solid 3px black;
+                                      }
+
+                                      .booking .booking__main .booking__section-title span,
+                                      .booking .booking__main .booking__section-title i {
+                                        font-size: 1.5rem;
+                                      }
+
+                                      .booking .booking__main .booking__section-title span b,
+                                      .booking .booking__main .booking__section-title i b {
+                                        margin-left: 2rem;
+                                      }
+
+                                      .booking .booking__main .booking__section-sort {
+
+                                        =======hr .booking .booking__main .booking__section-controls span,
+                                        hr .booking .booking__main .booking__section-title span {
+                                          font-size: 1rem;
+                                        }
+
+                                        hr .booking .booking__main .booking__section-controls .reset-btn,
+                                        hr .booking .booking__main .booking__section-controls .filter-btn,
+                                        hr .booking .booking__main .booking__section-title .reset-btn,
+                                        hr .booking .booking__main .booking__section-title .filter-btn {
+                                          font-weight: 600;
+                                          cursor: pointer;
+                                        }
+
+                                        hr .booking .booking__main .booking__section-controls .reset-btn:hover,
+                                        hr .booking .booking__main .booking__section-controls .filter-btn:hover,
+                                        hr .booking .booking__main .booking__section-title .reset-btn:hover,
+                                        hr .booking .booking__main .booking__section-title .filter-btn:hover {
+                                          color: white;
+                                        }
+
+                                        hr .booking .booking__main .booking__section-title {
+                                          padding-bottom: 2rem;
+                                          border-bottom: solid 3px black;
+                                        }
+
+                                        hr .booking .booking__main .booking__section-title span,
+                                        hr .booking .booking__main .booking__section-title i {
+                                          font-size: 1.5rem;
+                                        }
+
+                                        hr .booking .booking__main .booking__section-title span b,
+                                        hr .booking .booking__main .booking__section-title i b {
+                                          margin-left: 2rem;
+                                        }
+
+                                        hr .booking .booking__main .booking__section-sort {
+                                          >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a padding: 1rem;
+                                          display: flex;
+                                          justify-content: space-around;
+                                          border-bottom: solid 1px black;
+                                        }
+
+                                        <<<<<<< HEAD .booking .booking__main .booking__section-sort span:not(:first-child) {
+                                          cursor: pointer;
+                                        }
+
+                                        .booking .booking__main .booking__section-sort span:not(:first-child):hover {
+                                          transform: scale(1.3);
+                                          transition: ease 0.2s;
+                                        }
+
+                                        .booking .booking__main .booking__section-sort .active {
+                                          color: #605dec;
+                                          font-weight: 600;
+                                        }
+
+                                        .booking .options-container {
+                                          =======hr .booking .booking__main .booking__section-sort span:not(:first-child) {
+                                            cursor: pointer;
+                                          }
+
+                                          hr .booking .booking__main .booking__section-sort span:not(:first-child):hover {
+                                            transform: scale(1.3);
+                                            transition: ease 0.2s;
+                                          }
+
+                                          hr .booking .booking__main .booking__section-sort .active {
+                                            color: #605dec;
+                                            font-weight: 600;
+                                          }
+
+                                          hr .booking .options-container {
+                                            >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: flex;
+                                            flex-direction: column;
+                                            gap: 0.5rem;
+                                            margin-top: 1rem;
+                                          }
+
+                                          <<<<<<< HEAD .booking .options-container .option-box {
+                                            =======hr .booking .options-container .option-box {
+                                              >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: flex;
+                                              flex-wrap: wrap;
+                                              background-color: #dbe5fd;
+                                              border-radius: 20px;
+                                              padding: 0.75rem;
+                                              text-align: center;
+                                            }
+
+                                            <<<<<<< HEAD .booking .options-container .option-box:hover {
+                                              box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                                            }
+
+                                            .booking .options-container .option-box input[type=range] {
+                                              width: 80%;
+                                              margin: auto;
+                                            }
+
+                                            .booking .options-container .option-box span {
+                                              =======hr .booking .options-container .option-box:hover {
+                                                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                                              }
+
+                                              hr .booking .options-container .option-box input[type=range] {
+                                                width: 80%;
+                                                margin: auto;
+                                              }
+
+                                              hr .booking .options-container .option-box span {
+                                                >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a font-size: 0.8rem;
+                                                font-weight: 500;
+                                                color: #605dec;
+                                              }
+
+                                              <<<<<<< HEAD .booking .options-container .option-box .option-title {
+                                                =======hr .booking .options-container .option-box .option-title {
+                                                  >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a width: 100%;
+                                                  font-size: 1rem;
+                                                  font-weight: 300;
+                                                  color: #414091;
+                                                }
+
+                                                <<<<<<< HEAD .booking .options-container .option-box section {
+                                                  =======hr .booking .options-container .option-box section {
+                                                    >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a margin-bottom: 0.5rem;
+                                                    padding: 0.5rem 0;
+                                                    font-size: 0.6rem;
+                                                    background-color: #fefeff;
+                                                    border-radius: 20px;
+                                                    color: grey;
+                                                    cursor: pointer;
+                                                  }
+
+                                                  <<<<<<< HEAD .booking .options-container .option-box section:hover {
+                                                    =======hr .booking .options-container .option-box section:hover {
+                                                      >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a background-color: #605dec;
+                                                      color: white;
+                                                      font-weight: 500;
+                                                      -webkit-animation: swing 1s ease;
+                                                      animation: swing 1s ease;
+                                                      -webkit-animation-iteration-count: 1;
+                                                      animation-iteration-count: 1;
+                                                    }
+
+                                                    <<<<<<< HEAD .booking .options-container .option-box .active {
+                                                      =======hr .booking .options-container .option-box .active {
+                                                        >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a background-color: #605dec;
+                                                        color: white;
+                                                        font-weight: 500;
+                                                      }
+
+                                                      <<<<<<< HEAD .booking .options-container .option-box .check-list {
+                                                        height: 20vh;
+                                                        overflow-y: scroll;
+                                                      }
+
+                                                      .booking .options-container .option-box .check-list label {
+                                                        font-size: 0.8rem;
+                                                      }
+
+                                                      .booking .options-container .option-box .rating {
+                                                        font-size: 1rem;
+                                                      }
+
+                                                      .booking .options-container .option-box i {
+                                                        cursor: pointer;
+                                                      }
+
+                                                      .booking-list {
+                                                        =======hr .booking .options-container .option-box .check-list {
+                                                          height: 20vh;
+                                                          overflow-y: scroll;
+                                                        }
+
+                                                        hr .booking .options-container .option-box .check-list label {
+                                                          font-size: 0.8rem;
+                                                        }
+
+                                                        hr .booking .options-container .option-box .rating {
+                                                          font-size: 1rem;
+                                                        }
+
+                                                        hr .booking .options-container .option-box i {
+                                                          cursor: pointer;
+                                                        }
+
+                                                        hr .booking-list {
+                                                          >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a padding: 1rem;
+                                                          display: flex;
+                                                          flex-direction: column;
+                                                          gap: 0.8rem;
+                                                          max-height: 200vh;
+                                                          overflow-y: scroll;
+                                                        }
+
+                                                        <<<<<<< HEAD .booking-list .booking-list__item {
+                                                          =======hr .booking-list .booking-list__item {
+                                                            >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: flex;
+                                                            flex-wrap: nowrap;
+                                                            width: 100%;
+                                                            background-color: #fdfeff;
+                                                            border-radius: 20px;
+                                                            padding: 1rem;
+                                                          }
+
+                                                          <<<<<<< HEAD .booking-list .booking-list__item:hover {
+                                                            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                                                          }
+
+                                                          .booking-list .booking-list__item>div:first-child {
+                                                            =======hr .booking-list .booking-list__item:hover {
+                                                              box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                                                            }
+
+                                                            hr .booking-list .booking-list__item>div:first-child {
+                                                              >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: flex;
+                                                              justify-content: center;
+                                                              align-items: center;
+                                                              flex-direction: column;
+                                                              text-align: center;
+                                                              gap: 0.5rem;
+                                                            }
+
+                                                            <<<<<<< HEAD .booking-list .booking-list__item>div:first-child a {
+                                                              color: #605dec;
+                                                            }
+
+                                                            .booking-list .booking-list__item>div:first-child img {
+                                                              box-shadow: rgb(38, 57, 77) 0px 5px 30px -10px;
+                                                            }
+
+                                                            .booking-list .booking-list__item>div:last-child {
+                                                              =======hr .booking-list .booking-list__item>div:first-child a {
+                                                                color: #605dec;
+                                                              }
+
+                                                              hr .booking-list .booking-list__item>div:first-child img {
+                                                                box-shadow: rgb(38, 57, 77) 0px 5px 30px -10px;
+                                                              }
+
+                                                              hr .booking-list .booking-list__item>div:last-child {
+                                                                >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: flex;
+                                                                flex-direction: column;
+                                                                justify-content: center;
+                                                              }
+
+                                                              <<<<<<< HEAD .booking-list .booking-list__item>div:last-child h1 {
+                                                                font-size: 1rem;
+                                                                font-weight: bold;
+                                                                margin: 0;
+                                                              }
+
+                                                              .booking-list .booking-list__item>div:last-child .rating {
+                                                                text-align: center;
+                                                                padding: 0.25rem 0;
+                                                                font-size: 0.8rem;
+                                                                background-color: #605dec;
+                                                                border-radius: 20px;
+                                                                min-width: 30%;
+                                                                color: white;
+                                                              }
+
+                                                              .booking-list .booking-list__item>div:last-child .location {
+                                                                =======hr .booking-list .booking-list__item>div:last-child h1 {
+                                                                  font-size: 1rem;
+                                                                  font-weight: bold;
+                                                                }
+
+                                                                hr .booking-list .booking-list__item>div:last-child .rating {
+                                                                  text-align: center;
+                                                                  padding: 0.5rem 0.5rem;
+                                                                  font-size: 1rem;
+                                                                  background-color: #605dec;
+                                                                  border-radius: 20px;
+                                                                  min-width: 40%;
+                                                                  color: white;
+                                                                }
+
+                                                                hr .booking-list .booking-list__item>div:last-child .location {
+                                                                  >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: flex;
+                                                                  gap: 0.1rem;
+                                                                  flex-direction: column;
+                                                                  color: #605dec;
+                                                                  font-size: 1rem;
+                                                                }
+
+                                                                <<<<<<< HEAD .booking-list .booking-list__item>div:last-child .location span {
+                                                                  font-weight: bold;
+                                                                }
+
+                                                                .booking-list .booking-list__item>div:last-child .location .icon-section {
+                                                                  color: #a35af8;
+                                                                }
+
+                                                                .booking-list .booking-list__item>div:last-child .location .icon-section i:first-child,
+                                                                .booking-list .booking-list__item>div:last-child .location .icon-section i:last-child {
+                                                                  font-size: 2rem;
+                                                                }
+
+                                                                .booking-list .booking-list__item>div:last-child .location div:last-child .price {
+                                                                  font-size: 1.5rem;
+                                                                  color: #2a26d9;
+                                                                }
+
+                                                                .booking-list .booking-list__item>div:last-child .location div:last-child .old-price {
+                                                                  text-decoration: line-through;
+                                                                  color: #cdd5e3;
+                                                                }
+
+                                                                .booking-list .booking-list__item>div:last-child .location div:last-child a {
+                                                                  padding: 0.5rem 0.5rem;
+
+                                                                  =======hr .booking-list .booking-list__item>div:last-child .location span {
+                                                                    font-weight: bold;
+                                                                  }
+
+                                                                  hr .booking-list .booking-list__item>div:last-child .location .icon-section {
+                                                                    color: #a35af8;
+                                                                  }
+
+                                                                  hr .booking-list .booking-list__item>div:last-child .location .icon-section i:first-child,
+                                                                  hr .booking-list .booking-list__item>div:last-child .location .icon-section i:last-child {
+                                                                    font-size: 2rem;
+                                                                  }
+
+                                                                  hr .booking-list .booking-list__item>div:last-child .location div:last-child .price {
+                                                                    font-size: 1.5rem;
+                                                                    color: #2a26d9;
+                                                                  }
+
+                                                                  hr .booking-list .booking-list__item>div:last-child .location div:last-child .old-price {
+                                                                    text-decoration: line-through;
+                                                                    color: #cdd5e3;
+                                                                  }
+
+                                                                  hr .booking-list .booking-list__item>div:last-child .location div:last-child a {
+                                                                    padding: 0.5rem 0.5rem;
+                                                                    width: 80%;
+                                                                    >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a font-size: 1rem;
+                                                                    font-weight: bold;
+                                                                    background-color: #ffc700;
+                                                                    color: black;
+                                                                  }
+
+                                                                  <<<<<<< HEAD .booking-list .booking-list__item>div:last-child .location div:last-child a:hover {
+                                                                    color: #6e7491;
+                                                                    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                                                                  }
+
+                                                                  .booking-list .booking-list__item:last-child {
+                                                                    =======hr .booking-list .booking-list__item>div:last-child .location div:last-child a:hover {
+                                                                      color: #6e7491;
+                                                                      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                                                                    }
+
+                                                                    hr .booking-list .booking-list__item:last-child {
+                                                                      >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: flex;
+                                                                      justify-content: center;
+                                                                      align-items: center;
+                                                                      background-color: #e1eafe;
+                                                                    }
+
+                                                                    <<<<<<< HEAD .booking-list .booking-list__item:last-child h1 {
+                                                                      text-transform: uppercase;
+                                                                      font-weight: bold;
+                                                                    }
+
+                                                                    .booking-list .booking-list__item img {
+                                                                      =======hr .booking-list .booking-list__item:last-child h1 {
+                                                                        text-transform: uppercase;
+                                                                        font-weight: bold;
+                                                                      }
+
+                                                                      hr .booking-list .booking-list__item img {
+                                                                        >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a width: 100%;
+                                                                        object-fit: cover;
+                                                                        border-radius: 20px;
+                                                                      }
+
+                                                                      <<<<<<< HEAD .booking__product {
+                                                                        =======hr .booking__product {
+                                                                          >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a width: 100%;
+                                                                          background-color: #e6f5ff;
+                                                                          padding: 2rem;
+                                                                        }
+
+                                                                        <<<<<<< HEAD .booking__product .product-header h1 {
+                                                                          =======hr .booking__product .product-header h1 {
+                                                                            >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a font-weight: bold;
+                                                                            font-size: 3rem;
+                                                                            background: -webkit-linear-gradient(right, #605dec, #2a26d9);
+                                                                            -webkit-background-clip: text;
+                                                                            -webkit-text-fill-color: transparent;
+                                                                          }
+
+                                                                          <<<<<<< HEAD .booking__product .product-header p {
+                                                                            font-size: 2rem;
+                                                                            color: black;
+                                                                          }
+
+                                                                          .booking__product .product-header section:last-child {
+                                                                            =======hr .booking__product .product-header p {
+                                                                              font-size: 2rem;
+                                                                              color: black;
+                                                                            }
+
+                                                                            hr .booking__product .product-header section:last-child {
+                                                                              >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a background-color: #e6f5ff;
+                                                                              padding: 1rem;
+                                                                              border-radius: 20px;
+                                                                              color: #605dec;
+                                                                            }
+
+                                                                            <<<<<<< HEAD .booking__product .product-header section:last-child span {
+                                                                              =======hr .booking__product .product-header section:last-child span {
+                                                                                >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a font-size: 1.2rem;
+                                                                                font-weight: 500;
+                                                                                color: black;
+                                                                              }
+
+                                                                              <<<<<<< HEAD .booking__product .product-header section:last-child i:first-child,
+                                                                              .booking__product .product-header section:last-child i:last-child {
+                                                                                font-size: 2.5rem;
+                                                                              }
+
+                                                                              .booking__product img {
+
+                                                                                =======hr .booking__product .product-header section:last-child i:first-child,
+                                                                                hr .booking__product .product-header section:last-child i:last-child {
+                                                                                  font-size: 2.5rem;
+                                                                                }
+
+                                                                                hr .booking__product img {
+                                                                                  >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a display: block;
+                                                                                  margin: 3rem auto;
+                                                                                  border-radius: 0 30px;
+                                                                                  width: 80%;
+                                                                                  object-fit: cover;
+                                                                                }
+
+                                                                                <<<<<<< HEAD .booking__steps {
+                                                                                  background-color: #e6f5ff;
+                                                                                }
+
+                                                                                .booking__steps .carousel-indicators {
+                                                                                  bottom: 5%;
+                                                                                  display: flex;
+                                                                                  align-items: center;
+                                                                                  justify-content: space-between;
+                                                                                  width: 80%;
+                                                                                  margin: auto;
+                                                                                }
+
+                                                                                .booking__steps .carousel-indicators .active {
+                                                                                  background-color: #2a26d9;
+                                                                                }
+
+                                                                                .booking__steps .carousel-indicators button {
+                                                                                  border: none;
+                                                                                  outline: none;
+                                                                                  min-width: 3rem;
+                                                                                  position: initial;
+                                                                                  padding: 0.5rem 1rem;
+                                                                                  color: #ffc700;
+                                                                                }
+
+                                                                                .booking__steps .carousel-indicators section {
+                                                                                  max-width: 15rem;
+                                                                                }
+
+                                                                                .booking__steps .carousel-indicators section button {
+                                                                                  background-color: #6e7491;
+                                                                                  padding: 0.2rem;
+                                                                                }
+
+                                                                                .booking__steps .carousel-item {
+                                                                                  padding: 1rem;
+                                                                                }
+
+                                                                                .main-comment .content-comment {
+                                                                                  font-weight: 50;
+                                                                                }
+
+                                                                                .main-comment .address .date {
+                                                                                  color: #605dec;
+                                                                                }
+
+                                                                                .rating .checked {
+                                                                                  color: orange;
+                                                                                }
+
+                                                                                .main {
+                                                                                  background-color: #e6f5ff;
+                                                                                }
+
+                                                                                .decription {
+                                                                                  font-size: 10px;
+                                                                                }
+
+                                                                                btn-primary {
+                                                                                  background-color: #605dec !important;
+                                                                                }
+
+                                                                                .app .fa {
+                                                                                  font-size: 40px;
+                                                                                }
+
+                                                                                .fa-apple {
+                                                                                  color: #979797;
+                                                                                }
+
+                                                                                .close:hover,
+                                                                                .close:focus {
+                                                                                  color: #f44336;
+                                                                                  cursor: pointer;
+                                                                                }
+
+                                                                                .button {
+                                                                                  background-color: #605dec;
+                                                                                }
+
+                                                                                .button:hover {
+                                                                                  opacity: 0.8;
+                                                                                  background-color: #605dec;
+                                                                                }
+
+                                                                                .backgroundGray {
+                                                                                  background-color: rgba(110, 116, 145, 0.2);
+                                                                                  display: none;
+                                                                                  /* Hidden by default */
+                                                                                  position: fixed;
+                                                                                  /* Stay in place */
+                                                                                  z-index: 1;
+                                                                                  /* Sit on top */
+                                                                                  left: 0;
+                                                                                  top: 0;
+                                                                                  width: 100%;
+                                                                                  /* Full width */
+                                                                                  height: 100%;
+                                                                                  /* Full height */
+                                                                                  overflow: auto;
+                                                                                  /* Enable scroll if needed */
+                                                                                  padding-top: 50px;
+                                                                                }
+
+                                                                                .homePage {
+                                                                                  overflow: clip;
+                                                                                }
+
+                                                                                #id02 {
+                                                                                  display: none;
+                                                                                }
+
+                                                                                .carousel-inner {
+                                                                                  padding-bottom: 10%;
+                                                                                }
+
+                                                                                .carousel-inner h1 {
+                                                                                  font-weight: bold;
+                                                                                  font-size: 2rem;
+                                                                                  color: #605dec;
+                                                                                }
+
+                                                                                .carousel-inner #step-1 {
+                                                                                  display: flex;
+                                                                                  flex-wrap: wrap;
+                                                                                }
+
+                                                                                .carousel-inner #step-1>div {
+                                                                                  display: flex;
+                                                                                  justify-content: center;
+                                                                                  align-items: center;
+                                                                                  padding: 1rem;
+                                                                                  background-color: #d9d9d9;
+                                                                                  border-radius: 20px 20px 0px 0px;
+                                                                                }
+
+                                                                                .carousel-inner #step-1>div:first-child {
+                                                                                  flex-direction: column;
+                                                                                  gap: 2rem;
+                                                                                  background-color: transparent;
+                                                                                }
+
+                                                                                .carousel-inner #step-1>div .seat-type {
+                                                                                  display: flex;
+                                                                                  justify-content: center;
+                                                                                  align-items: center;
+                                                                                  align-self: start;
+                                                                                }
+
+                                                                                .carousel-inner #step-1 .seats-model {
+                                                                                  flex-direction: row;
+                                                                                  flex-wrap: wrap;
+                                                                                }
+
+                                                                                .carousel-inner #step-1 .seats-model i {
+                                                                                  font-size: 1.5rem;
+                                                                                  color: #6e7491;
+                                                                                }
+
+                                                                                .carousel-inner #step-2 {
+                                                                                  display: flex;
+                                                                                  justify-content: center;
+                                                                                }
+
+                                                                                .carousel-inner #step-2 h3 {
+                                                                                  text-align: center;
+                                                                                  color: #605dec;
+                                                                                }
+
+                                                                                .carousel-inner #step-2 section {
+                                                                                  display: flex;
+                                                                                  flex-direction: column;
+                                                                                  gap: 1rem;
+                                                                                  max-height: 60vh;
+                                                                                  overflow-y: scroll;
+                                                                                  font-size: 1rem;
+                                                                                }
+
+                                                                                .carousel-inner #step-2 section input {
+                                                                                  height: 1rem;
+                                                                                  width: 1rem;
+                                                                                }
+
+                                                                                .carousel-inner #step-2 section label {
+                                                                                  margin: 0;
+                                                                                  margin-left: 0.5rem;
+                                                                                }
+
+                                                                                .carousel-inner #step-2 .location-item i {
+                                                                                  color: #605dec;
+                                                                                  font-size: 1.5rem;
+                                                                                }
+
+                                                                                .carousel-inner #step-3 {
+                                                                                  display: flex;
+                                                                                  flex-direction: column;
+                                                                                  align-items: center;
+                                                                                  gap: 1rem;
+                                                                                }
+
+                                                                                .carousel-inner #step-3 input {
+                                                                                  padding: 1rem;
+                                                                                  width: 100%;
+                                                                                  height: 2rem;
+                                                                                  background-color: white;
+                                                                                  border-radius: 5px;
+                                                                                  margin: 0.6rem 0;
+                                                                                }
+
+                                                                                .carousel-inner #step-3 h1,
+                                                                                .carousel-inner #step-3 h2 {
+                                                                                  font-size: 1.2rem;
+                                                                                }
+
+                                                                                .carousel-inner #step-3 h1::after {
+                                                                                  content: "*";
+                                                                                  color: red;
+                                                                                  font-weight: bold;
+                                                                                }
+
+                                                                                .seat-icon {
+                                                                                  cursor: pointer;
+                                                                                  background-color: white;
+                                                                                  height: 3rem;
+                                                                                  width: 1.5rem;
+                                                                                  border-radius: 5px;
+                                                                                  border: 1px solid black;
+                                                                                  position: relative;
+                                                                                  z-index: 0;
+                                                                                }
+
+                                                                                .seat-icon::before {
+                                                                                  content: "";
+                                                                                  position: absolute;
+                                                                                  bottom: 5%;
+                                                                                  left: 50%;
+                                                                                  transform: translateX(-50%);
+                                                                                  border: 1px solid black;
+                                                                                  height: 0.5rem;
+                                                                                  width: 1.25rem;
+                                                                                  border-radius: 5px;
+                                                                                }
+
+                                                                                .seat-icon--select {
+                                                                                  background-color: #affd7f;
+                                                                                }
+
+                                                                                .seat-icon--checked {
+                                                                                  background-color: #6e7491;
+                                                                                }
+
+                                                                                .seat-icon:hover {
+                                                                                  transform: scale(1.1);
+                                                                                }
+
+                                                                                footer {
+                                                                                  background: white;
+                                                                                }
+
+                                                                                footer i {
+                                                                                  color: #6e7491;
+                                                                                  font-size: 1.5rem;
+                                                                                }
+
+                                                                                footer i:hover {
+                                                                                  -webkit-animation: swing 1s ease;
+                                                                                  animation: swing 1s ease;
+                                                                                  -webkit-animation-iteration-count: 1;
+                                                                                  animation-iteration-count: 1;
+                                                                                  cursor: pointer;
+                                                                                }
+
+                                                                                footer section h4 {
+                                                                                  font-size: 1rem;
+                                                                                  color: #6e7491;
+                                                                                }
+
+                                                                                footer section ul {
+                                                                                  list-style: none;
+                                                                                  padding: 0;
+                                                                                  font-weight: lighter;
+                                                                                }
+
+                                                                                footer section ul li {
+                                                                                  color: #6e7491;
+                                                                                  margin: 0.5rem 0;
+                                                                                }
+
+                                                                                footer section ul li:hover {
+                                                                                  cursor: pointer;
+                                                                                  font-weight: 500;
+                                                                                }
+
+                                                                                footer section .app-icon {
+                                                                                  margin: 1rem 0;
+                                                                                  font-weight: normal;
+                                                                                  font-style: normal;
+                                                                                }
+
+                                                                                footer section .app-icon .btn {
+                                                                                  color: #fff;
+                                                                                  background-color: #111;
+                                                                                  border-color: #000;
+                                                                                  padding: 15px 16px 5px 40px;
+                                                                                  position: relative;
+                                                                                  font-weight: 600;
+                                                                                }
+
+                                                                                footer section .app-icon .btn-google:before {
+                                                                                  content: "";
+                                                                                  background-image: url(https://4.bp.blogspot.com/-52U3eP2JDM4/WSkIT1vbUxI/AAAAAAAArQA/iF1BeARv2To-2FGQU7V6UbNPivuv_lccACLcB/s30/nexus2cee_ic_launcher_play_store_new-1.png);
+                                                                                  background-size: cover;
+                                                                                  background-repeat: no-repeat;
+                                                                                  width: 30px;
+                                                                                  height: 30px;
+                                                                                  position: absolute;
+                                                                                  left: 6px;
+                                                                                  top: 50%;
+                                                                                  margin-top: -15px;
+                                                                                }
+
+                                                                                footer section .app-icon .btn-appstore:before {
+                                                                                  content: "";
+                                                                                  background-image: url(data:image/png;base64,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);
+                                                                                  background-size: cover;
+                                                                                  background-repeat: no-repeat;
+                                                                                  width: 30px;
+                                                                                  height: 30px;
+                                                                                  position: absolute;
+                                                                                  left: 6px;
+                                                                                  top: 50%;
+                                                                                  margin-top: -15px;
+                                                                                }
+
+                                                                                footer section .app-icon .btn:after {
+                                                                                  content: "  Download from ";
+                                                                                  position: absolute;
+                                                                                  top: 5px;
+                                                                                  left: 45px;
+                                                                                  font-size: 0.6rem;
+                                                                                  font-weight: 400;
+
+                                                                                  =======hr .booking__steps {
+                                                                                    height: 100vh;
+                                                                                  }
+
+                                                                                  hr .booking__steps .carousel-indicators {
+                                                                                    display: flex;
+                                                                                    width: 50%;
+                                                                                    margin: auto;
+                                                                                    gap: 1rem;
+                                                                                  }
+
+                                                                                  hr .booking__steps .carousel-indicators .active {
+                                                                                    background-color: #e6f5ff;
+                                                                                  }
+
+                                                                                  hr .booking__steps .carousel-indicators button {
+                                                                                    border: none;
+                                                                                    outline: none;
+                                                                                    padding: 0.2rem;
+                                                                                    min-width: 3rem;
+                                                                                  }
+
+                                                                                  hr .footer-col {
+                                                                                    color: #6e7491;
+                                                                                  }
+
+                                                                                  hr .footer-col .title {
+                                                                                    font-size: 1.5rem;
+                                                                                    font-weight: bold;
+                                                                                  }
+
+                                                                                  hr .footer-col btn-light {
+                                                                                    font-weight: 50;
+                                                                                  }
+
+                                                                                  hr .main-comment .content-comment {
+                                                                                    font-weight: 50;
+                                                                                  }
+
+                                                                                  hr .main-comment .address .date {
+                                                                                    color: #605dec;
+                                                                                  }
+
+                                                                                  hr .rating .checked {
+                                                                                    color: orange;
+                                                                                  }
+
+                                                                                  hr .main {
+                                                                                    background-color: #e6f5ff;
+                                                                                  }
+
+                                                                                  hr .decription {
+                                                                                    font-size: 10px;
+                                                                                  }
+
+                                                                                  hr btn-primary {
+                                                                                    background-color: #605dec !important;
+                                                                                  }
+
+                                                                                  hr .app .fa {
+                                                                                    font-size: 40px;
+                                                                                  }
+
+                                                                                  hr .fa-apple {
+                                                                                    color: #979797;
+                                                                                  }
+
+                                                                                  hr .close:hover,
+                                                                                  hr .close:focus {
+                                                                                    color: #f44336;
+                                                                                    cursor: pointer;
+                                                                                  }
+
+                                                                                  hr .button {
+                                                                                    background-color: #605dec;
+                                                                                  }
+
+                                                                                  hr .button:hover {
+                                                                                    opacity: 0.8;
+                                                                                    background-color: #605dec;
+                                                                                  }
+
+                                                                                  hr .backgroundGray {
+                                                                                    background-color: rgba(110, 116, 145, 0.2);
+                                                                                  }
+
+                                                                                  hr #id02 {
+                                                                                    display: none;
+                                                                                  }
+
+                                                                                  .header-icon {
+                                                                                    margin-left: 10%;
+                                                                                    width: 10%;
+                                                                                  }
+
+                                                                                  .home-img {
+                                                                                    background-image: url("../img/imageHome.png");
+                                                                                    background-repeat: no-repeat;
+                                                                                    height: 100%;
+                                                                                    width: 100%;
+                                                                                  }
+
+                                                                                  .height-header {
+                                                                                    height: 70%;
+                                                                                  }
+
+                                                                                  .width-header {
+                                                                                    width: 98%;
+                                                                                  }
+
+                                                                                  .hover-departure:hover .dropdown-menu {
+                                                                                    display: block;
+                                                                                  }
+
+                                                                                  .hover-arrival:hover .dropdown-menu {
+                                                                                    display: block;
+                                                                                  }
+
+                                                                                  .trip-radien {
+                                                                                    font-size: 6rem;
+                                                                                    background: -webkit-linear-gradient(#2a26d9, #605dec);
+                                                                                    font-weight: bold;
+                                                                                    -webkit-background-clip: text;
+                                                                                    -webkit-text-fill-color: transparent;
+                                                                                    margin-top: 12vh;
+                                                                                  }
+
+                                                                                  .trending-product {
+                                                                                    color: #6e7491;
+                                                                                  }
+
+                                                                                  .product-item .img-radius {
+                                                                                    width: 23.3333333333vw;
+                                                                                    height: 23.3333333333vw;
+                                                                                    object-fit: cover;
+                                                                                    border-radius: 50%;
+                                                                                  }
+
+                                                                                  .product-item .img-square {
+                                                                                    width: 23.3333333333vw;
+                                                                                    height: 28.3333333333vw;
+                                                                                    object-fit: cover;
+                                                                                  }
+
+                                                                                  .comment .avatar .img-avatar {
+                                                                                    width: 3.3333333333vw;
+                                                                                    height: 3.3333333333vw;
+                                                                                    object-fit: cover;
+                                                                                    border-radius: 50%;
+                                                                                  }
+
+                                                                                  .footer-col {
+                                                                                    color: #6e7491;
+                                                                                  }
+
+                                                                                  .footer-col .title {
+                                                                                    font-size: 1.5rem;
+                                                                                    font-weight: bold;
+                                                                                  }
+
+                                                                                  .footer-col btn-light {
+                                                                                    font-weight: 50;
+                                                                                  }
+
+                                                                                  .main-comment .content-comment {
+                                                                                    font-weight: 50;
+                                                                                  }
+
+                                                                                  .main-comment .address .date {
+                                                                                    color: #605dec;
+                                                                                  }
+
+                                                                                  .rating .checked {
+                                                                                    color: orange;
+                                                                                  }
+
+                                                                                  .main {
+                                                                                    background-color: #e6f5ff;
+                                                                                  }
+
+                                                                                  .decription {
+                                                                                    font-size: 10px;
+                                                                                  }
+
+                                                                                  btn-primary {
+                                                                                    background-color: #605dec !important;
+                                                                                  }
+
+                                                                                  .app .fa {
+                                                                                    font-size: 40px;
+                                                                                    >>>>>>>1e6730170acf45c27697b16eada4bd8e929a204a
+                                                                                  }
+
+                                                                                  /*# sourceMappingURL=style.css.map */

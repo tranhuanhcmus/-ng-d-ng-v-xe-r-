@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+<<<<<<< HEAD
       Chuyenxe.hasMany(models.Phieuxe, { foreignKey: 'chuyenxeId' });
       Chuyenxe.hasMany(models.CT_Chuyenxe, { foreignKey: 'chuyenxeId' });
       Chuyenxe.hasMany(models.Xe, { foreignKey: 'chuyenxeId' });
@@ -23,6 +24,12 @@ module.exports = (sequelize, DataTypes) => {
   }
   Chuyenxe.init({
     mota: DataTypes.STRING,
+=======
+    }
+  }
+  Chuyenxe.init({
+    motachinhsach: DataTypes.STRING,
+>>>>>>> 57224f4c944fe1a950b0910d382a080f7100b550
     giave: DataTypes.INTEGER
   }, {
     sequelize,

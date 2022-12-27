@@ -11,8 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+<<<<<<< HEAD
       Xe.belongsTo(models.Chuyenxe, { foreignKey: 'chuyenxeId' });
       Xe.hasMany(models.Hinhanhxe, { foreignKey: 'xeId' });
+=======
+>>>>>>> 57224f4c944fe1a950b0910d382a080f7100b550
     }
   }
   Xe.init({
