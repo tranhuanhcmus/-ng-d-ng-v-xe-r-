@@ -45,7 +45,7 @@ app.get('/createTable', (req, res) => {
     let model = require('./models');
     model.sequelize.sync().then(() => {
         res.send('table create');
->>>>>>> 57224f4c944fe1a950b0910d382a080f7100b550
+
     })
 })
 // 404 page
