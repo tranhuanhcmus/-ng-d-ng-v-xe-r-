@@ -11,11 +11,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-<<<<<<< HEAD
+
       Role.belongsTo(models.Nhanvien, { foreignKey: 'nhanvienId' });
 
-=======
->>>>>>> 57224f4c944fe1a950b0910d382a080f7100b550
+
     }
   }
   Role.init({
