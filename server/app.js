@@ -36,15 +36,7 @@ app.use('/qna', require("./routes/qnaRoute"))
 app.use('/Booking', require("./routes/BookingRoute"))
 
 app.use('/Booking-details', require("./routes/Booking-detailsRoute"))
-<<<<<<< HEAD
 
-app.use('/findticked', require("./routes/findtickedRoute"))
-app.use('/ticketinfo', require("./routes/ticketinfoRoute"))
-app.get('/createTable', (req, res) => {
-    let model = require('./models');
-    model.sequelize.sync().then(() => {
-        res.send('create table');
-=======
 
 app.use('/findticked', require("./routes/findtickedRoute"))
 app.use('/ticketinfo', require("./routes/ticketinfoRoute"))
