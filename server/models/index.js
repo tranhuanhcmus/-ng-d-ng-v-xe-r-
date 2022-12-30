@@ -1,9 +1,5 @@
 'use strict';
-<<<<<<< HEAD
 
-=======
-import { DataTypes, Model, Optional } from "sequelize";
->>>>>>> 57224f4c944fe1a950b0910d382a080f7100b550
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
