@@ -39,7 +39,13 @@ app.use('/Booking-details',require("./routes/Booking-detailsRoute"))
 
 app.use('/findticked',require("./routes/findtickedRoute"))
 app.use('/ticketinfo',require("./routes/ticketinfoRoute"))
+app.get('/createTable', (req, res) => {
+    let model = require('./models');
+    model.sequelize.sync().then(() => {
+        res.send('table create');
 
+    })
+})
 // 404 page
 app.use((req, res) => {
     res.status(404).render("404", { title: "404 Error" });
