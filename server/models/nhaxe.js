@@ -11,14 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-<<<<<<< HEAD
+
       Nhaxe.hasMany(models.Chuyenxe, { foreignKey: 'nhaxeId' });
       Nhaxe.belongsToMany(models.Benxe, {
         through: 'CT_BenXe_NhaXe',
         foreignKey: 'nhaxeId'
       })
-=======
->>>>>>> 57224f4c944fe1a950b0910d382a080f7100b550
+
     }
   }
   Nhaxe.init({

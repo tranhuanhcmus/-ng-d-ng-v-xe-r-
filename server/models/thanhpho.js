@@ -11,12 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-<<<<<<< HEAD
+
       Thanhpho.hasMany(models.Chuyenxe, { foreignKey: 'thanhphodiId' });
       Thanhpho.hasMany(models.Chuyenxe, { foreignKey: 'thanhphodenId' });
       Thanhpho.hasMany(models.Benxe, { foreignKey: 'thanhphoId' });
-=======
->>>>>>> 57224f4c944fe1a950b0910d382a080f7100b550
+
     }
   }
   Thanhpho.init({
