@@ -14,18 +14,17 @@ module.exports = (sequelize, DataTypes) => {
 
       Chuyenxe.hasMany(models.Phieuxe, { foreignKey: 'chuyenxeId' });
       Chuyenxe.hasMany(models.CT_Chuyenxe, { foreignKey: 'chuyenxeId' });
-      Chuyenxe.belongsTo(models.Xe, { foreignKey: 'chuyenxeId' });
+      Chuyenxe.belongsTo(models.Xe, { foreignKey: 'xeId' });
       Chuyenxe.belongsTo(models.Nhaxe, { foreignKey: 'nhaxeId' });
 
       Chuyenxe.hasMany(models.Thanhpho, { foreignKey: 'thanhphodiId' });
       Chuyenxe.hasMany(models.Thanhpho, { foreignKey: 'thanhphodenId' });
-      Chuyenxe.hasMany(models.Chuyenxe, { foreignKey: 'chuyenxeId' });
     }
   }
 
   Chuyenxe.init({
     motachinhsach: DataTypes.STRING,
-
+    src: DataTypes.STRING,
     giave: DataTypes.INTEGER
   }, {
     sequelize,
