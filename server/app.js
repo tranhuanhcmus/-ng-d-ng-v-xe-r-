@@ -16,6 +16,9 @@ const hbs = create({
     defaultLayout: "main",
     partialsDir: path.join(__dirname, "views/partials"),
     helpers: {},
+    runtimeOptions: {
+        allowProtoPropertiesByDefault: true,
+    }
 });
 // view engine setup
 app.engine("handlebars", hbs.engine);
@@ -31,14 +34,14 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use('/', indexRoute)
 
-app.use('/qna',require("./routes/qnaRoute"))
+app.use('/qna', require("./routes/qnaRoute"))
 
-app.use('/Booking',require("./routes/BookingRoute"))
+app.use('/Booking', require("./routes/BookingRoute"))
 
-app.use('/Booking-details',require("./routes/Booking-detailsRoute"))
+app.use('/Booking-details', require("./routes/Booking-detailsRoute"))
 
-app.use('/findticked',require("./routes/findtickedRoute"))
-app.use('/ticketinfo',require("./routes/ticketinfoRoute"))
+app.use('/findticked', require("./routes/findtickedRoute"))
+app.use('/ticketinfo', require("./routes/ticketinfoRoute"))
 app.get('/createTable', (req, res) => {
     let model = require('./models');
     model.sequelize.sync().then(() => {
@@ -46,6 +49,10 @@ app.get('/createTable', (req, res) => {
 
     })
 })
+// test các hàm database xem có chạy dc ko 
+app.use('/test', require("./routes/test"));
+
+
 // 404 page
 app.use((req, res) => {
     res.status(404).render("404", { title: "404 Error" });
