@@ -52,8 +52,10 @@ app.get("/createTable", (req, res) => {
 // test các hàm database xem có chạy dc ko 
 app.use('/api/benxe', require("./routes/benxe"));
 app.use('/api/user', require("./routes/user"));
-
-
+app.use('/api/chuyenxe', require("./routes/chuyenxe"));
+app.use('/api/ct_chuyenxe', require("./routes/ct_chuyenxe"));
+app.use('/api/ct_phieuxe', require("./routes/ct_phieuxe"));
+app.use('/api/', require("./routes/diemdon"));
 // 404 page
 app.use((req, res) => {
     res.status(404).render("404", { title: "404 Error" });
