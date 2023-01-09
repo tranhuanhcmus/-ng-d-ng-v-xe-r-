@@ -38,7 +38,7 @@ app.use("/qna", require("./routes/qnaRoute"));
 app.use("/Booking", require("./routes/BookingRoute"));
 
 app.use("/Booking-details", require("./routes/Booking-detailsRoute"));
-
+app.use("/paymentmethods", require("./routes/PaymentMethodRouter"));
 app.use("/findticked", require("./routes/findtickedRoute"));
 app.use("/ticketinfo", require("./routes/ticketinfoRoute"));
 app.get("/createTable", (req, res) => {
