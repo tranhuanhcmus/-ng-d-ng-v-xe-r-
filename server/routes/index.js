@@ -1,12 +1,11 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-const controller = require('../controllers/indexController');
 
+const title = "HomePage";
+const user = "Huan";
 
-
-router.get('/', function (req, res, next) {
-  controller.showlist(req, res)
+router.get("/", function(req, res, next) {
+    res.render("Pages/homePage", { title, user });
 });
-
 
 module.exports = router;

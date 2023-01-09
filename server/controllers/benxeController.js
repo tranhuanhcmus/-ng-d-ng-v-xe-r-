@@ -20,8 +20,7 @@ const controller = {
     findAll: async(req, res) => {
         try {
             const benxe = await models.Benxe.findAll();
-            // res.status(200).json(benxe);
-            res.json(benxe);
+            res.status(200).json(benxe);
         } catch (err) {
             res.status(500).json(err);
         }
@@ -41,7 +40,7 @@ const controller = {
     },
     findByPk: async(req, res) => {
         try {
-            const benxe = awaitmodels.Benxe.findByPk(req.params.idbenxe);
+            const benxe = await models.Benxe.findByPk(req.params.idbenxe);
             res.status(200).json(benxe);
         } catch (err) {
             res.status(500).json(err);
