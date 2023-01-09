@@ -6,26 +6,22 @@
                 <div class="card-body p-5 text-center">
                   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">x</span>
                   <h3 class="mb-5">Đăng nhập</h3>
+                <form id="SignIn">
+                  <div class="form-outline mb-4">
+                    <input required type="text" class="form-control form-control-lg" placeholder="Username" form="SignIn" />
+                    
+                  </div>
       
                   <div class="form-outline mb-4">
-                    <input type="email" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-                    required id="typeEmailX-2" class="form-control form-control-lg" placeholder="Email" />
-                    <!-- <label class="form-label" for="typeEmailX-2">Email</label> -->
+                    <input required type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Password" form="SignIn"/>
+                    
                   </div>
-      
-                  <div class="form-outline mb-4">
-                    <input type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Password" />
-                    <!-- <label class="form-label" for="typePasswordX-2">Password</label> -->
-                  </div>
-      
-                  <!-- Checkbox -->
-                  <div class="form-check d-flex justify-content-start mb-4">
-                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-                    <label class="form-check-label" for="form1Example3"> Remember password </label>
-                  </div>
+
+                </form>
+
                   
                   
-                  <button class="btn btn-primary btn-lg btn-block button" type="submit">Đăng nhập</button>
+                  <button class="btn btn-primary btn-lg btn-block button" type="submit" form="SignIn" onclick="handleSignIn(event)">Đăng nhập</button>
 
                   <button onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" class="btn btn-primary btn-lg btn-block button" type="submit">Đăng ký</button>
 
@@ -55,36 +51,123 @@
               <div class="card-body p-5 text-center">
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">x</span>
                 <h3 class="mb-5">Đăng ký</h3>
-    
+                  <form id="SignUp">
+
                 <div class="form-outline mb-4">
-                  <input type="Username" id="typeUsernameX-2" class="form-control form-control-lg" placeholder="Username" />
+                  <input required type="Username" id="typeUsernameX-2" class="form-control form-control-lg" placeholder="Username" />
                 </div>
     
                 <div class="form-outline mb-4">
-                  <input type="email" id="typeEmailX-2" class="form-control form-control-lg" placeholder="Email or Phone Number" />
+                  <input required type="email" id="typeEmailX-2" class="form-control form-control-lg" placeholder="Email or Phone Number" />
+                </div>
+                <div  class="form-outline mb-4">
+                  <input required type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Password" />
                 </div>
                 <div class="form-outline mb-4">
-                  <input type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Password" />
-                </div>
-                <div class="form-outline mb-4">
-                  <input type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Confirm Password" />
+                  <input required type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Confirm Password" />
                 </div>
     
                 <!-- Checkbox -->
                 <div class="form-check d-flex justify-content-start mb-4">
-                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                  <input required class="form-check-input" type="checkbox" value="accept" id="form1Example3" />
                   <label class="form-check-label" for="form1Example3"> I agree to the <a href="#">term and conditions</a></label>
                 </div>
-                <div class="form-check d-flex justify-content-start mb-4">
-                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-                  <label class="form-check-label" for="form1Example3"> Send me the lastest deal alert </label>
-                </div>
                 
-                
-                <button class="btn btn-primary btn-lg btn-block button" type="submit">Tạo tài khoản</button>
+                <button class="btn btn-primary btn-lg btn-block button" type="submit" onclick="handleSignUp(event)">Tạo tài khoản</button>
+                  </form>
 
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      handleSignIn= async (event)=>{
+        event.preventDefault();
+
+        const form=document.getElementById("SignIn");
+
+        var chk_status = form.checkValidity();
+        form.reportValidity();
+        if(chk_status)
+        {
+          var username=form.elements[0].value.split(' ').join('');
+          var password=form.elements[1].value;
+        
+         await fetch('/api/user/', {
+                method: 'POST',
+                body: JSON.stringify({
+                  username:username,
+                  password:password
+                }),
+                headers: {
+                      'Content-Type': 'application/json'
+                }
+              })
+                .then(response => response.json())
+                .then(data => 
+                 {
+                   if(data){
+
+                     sessionStorage.setItem("username",data.username)
+                     window.location.reload()
+                   }
+                   else{
+                     alert("Not Exist Account")
+                   }
+                 }
+                )
+                
+                .catch(error => {
+                  console.log(error);
+                });
+
+        }
+        
+      }
+      handleSignUp= async (event)=>{
+       
+        event.preventDefault();
+      
+        const form=document.getElementById("SignUp");
+
+        var chk_status = form.checkValidity();     
+        
+        form.reportValidity();
+        
+        if(chk_status){
+
+          const username=form.elements[0].value.split(' ').join('');
+          const email=form.elements[1].value;
+          const password=form.elements[2].value;
+          const conFirmPass=form.elements[3].value;
+
+          if(password!=conFirmPass)
+            {
+              alert("sai mk")
+              return
+            }
+
+          
+          await fetch('/api/user/create', {
+                  method: 'POST',
+                  body: JSON.stringify({
+                    username:username,
+                    email:email,
+                    password:password,
+                    role:"user",
+                  }),
+                  headers: {
+                        'Content-Type': 'application/json'
+                  }
+                })
+                  .then(res =>res.status==200 ? alert("success"):alert("fail"))
+                  .catch(error => {
+                    alert("error")
+                  });
+
+          }
+        }
+        
+    </script>

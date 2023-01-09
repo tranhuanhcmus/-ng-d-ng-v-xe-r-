@@ -4,7 +4,6 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 var { create } = require("express-handlebars");
-var indexRoute = require("./routes/index.js");
 
 var app = express();
 
@@ -31,7 +30,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/", indexRoute);
+app.use("/", require("./routes/index.js"));
 
 app.use("/qna", require("./routes/qnaRoute"));
 
@@ -44,15 +43,12 @@ app.use("/ticketinfo", require("./routes/ticketinfoRoute"));
 app.get("/createTable", (req, res) => {
     let model = require("./models");
     model.sequelize.sync().then(() => {
-
-        res.send('table create');
-
-    })
-})
-// test các hàm database xem có chạy dc ko 
-app.use('/api/benxe', require("./routes/benxe"));
-app.use('/api/user', require("./routes/user"));
-
+        res.send("table create");
+    });
+});
+// test các hàm database xem có chạy dc ko
+app.use("/api/benxe", require("./routes/benxe"));
+app.use("/api/user", require("./routes/user"));
 
 // 404 page
 app.use((req, res) => {
