@@ -44,11 +44,15 @@ app.use("/ticketinfo", require("./routes/ticketinfoRoute"));
 app.get("/createTable", (req, res) => {
     let model = require("./models");
     model.sequelize.sync().then(() => {
-        res.send("table create");
-    });
-});
-// test các hàm database xem có chạy dc ko
-// app.use('/test', require("./routes/test"));
+
+        res.send('table create');
+
+    })
+})
+// test các hàm database xem có chạy dc ko 
+app.use('/api/benxe', require("./routes/benxe"));
+app.use('/api/user', require("./routes/user"));
+
 
 // 404 page
 app.use((req, res) => {
