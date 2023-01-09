@@ -52,7 +52,7 @@ app.get("/createTable", (req, res) => {
 // test các hàm database xem có chạy dc ko 
 app.use('/api/benxe', require("./routes/benxe"));
 app.use('/api/user', require("./routes/user"));
-
+app.use('/api/khachhang', require("./routes/khachhang"));
 
 // 404 page
 app.use((req, res) => {
