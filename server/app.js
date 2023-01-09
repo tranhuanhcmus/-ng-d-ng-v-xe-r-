@@ -18,7 +18,7 @@ const hbs = create({
     helpers: {},
     runtimeOptions: {
         allowProtoPropertiesByDefault: true,
-    }
+    },
 });
 // view engine setup
 app.engine("handlebars", hbs.engine);
@@ -31,20 +31,20 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use("/", indexRoute);
 
-app.use('/', indexRoute)
+app.use("/qna", require("./routes/qnaRoute"));
 
-app.use('/qna', require("./routes/qnaRoute"))
+app.use("/Booking", require("./routes/BookingRoute"));
 
-app.use('/Booking', require("./routes/BookingRoute"))
+app.use("/Booking-details", require("./routes/Booking-detailsRoute"));
 
-app.use('/Booking-details', require("./routes/Booking-detailsRoute"))
-
-app.use('/findticked', require("./routes/findtickedRoute"))
-app.use('/ticketinfo', require("./routes/ticketinfoRoute"))
-app.get('/createTable', (req, res) => {
-    let model = require('./models');
+app.use("/findticked", require("./routes/findtickedRoute"));
+app.use("/ticketinfo", require("./routes/ticketinfoRoute"));
+app.get("/createTable", (req, res) => {
+    let model = require("./models");
     model.sequelize.sync().then(() => {
+
         res.send('table create');
 
     })
@@ -53,10 +53,10 @@ app.get('/createTable', (req, res) => {
 app.use('/api/benxe', require("./routes/benxe"));
 app.use('/api/user', require("./routes/user"));
 
+
 // 404 page
 app.use((req, res) => {
     res.status(404).render("404", { title: "404 Error" });
 });
-
 
 module.exports = app;
