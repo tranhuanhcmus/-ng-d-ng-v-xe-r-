@@ -15,6 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       Thanhpho.hasMany(models.Chuyenxe, { foreignKey: 'thanhphodiId' });
       Thanhpho.hasMany(models.Chuyenxe, { foreignKey: 'thanhphodenId' });
       Thanhpho.hasMany(models.Benxe, { foreignKey: 'thanhphoId' });
+      Thanhpho.hasMany(models.Diemdon, { foreignKey: 'thanhphoId' });
 
     }
   }
