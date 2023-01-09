@@ -44,9 +44,11 @@
     </div>
   </div>
   <script>
-    const handleLogout=()=>{ sessionStorage.setItem("username","");
-    window.location.reload() } ; let user=sessionStorage.getItem("username");
-    if(user==="") { var items=document.querySelectorAll("li.user");
+    const handleLogout=()=>{ sessionStorage.setItem("user",JSON.stringify({}));
+    window.location.reload() } ; var
+    user=JSON.parse(sessionStorage.getItem("user")) ;
+    if(Object.keys(user).length === 0 && Object.getPrototypeOf(user) ===
+    Object.prototype) { var items=document.querySelectorAll("li.user");
     [...items].map((item)=>item.style.display="none") }else{ var
     items=document.querySelectorAll(".hideUser");
     [...items].map((item)=>item.style.display="none") }

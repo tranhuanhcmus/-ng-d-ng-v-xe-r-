@@ -8,12 +8,12 @@
                   <h3 class="mb-5">Đăng nhập</h3>
                 <form id="SignIn">
                   <div class="form-outline mb-4">
-                    <input required type="text" class="form-control form-control-lg" placeholder="Username" form="SignIn" />
+                    <input required type="text" class="form-control form-control-lg" placeholder="Username" form="SignIn"  />
                     
                   </div>
       
                   <div class="form-outline mb-4">
-                    <input required type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Password" form="SignIn"/>
+                    <input required type="password" class="form-control form-control-lg" placeholder="Password" form="SignIn" />
                     
                   </div>
 
@@ -61,10 +61,10 @@
                   <input required type="email" id="typeEmailX-2" class="form-control form-control-lg" placeholder="Email or Phone Number" />
                 </div>
                 <div  class="form-outline mb-4">
-                  <input required type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Password" />
+                  <input required type="password"  class="form-control form-control-lg" placeholder="Password" />
                 </div>
                 <div class="form-outline mb-4">
-                  <input required type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Confirm Password" />
+                  <input required type="password"  class="form-control form-control-lg" placeholder="Confirm Password" />
                 </div>
     
                 <!-- Checkbox -->
@@ -109,8 +109,8 @@
                 .then(data => 
                  {
                    if(data){
-
-                     sessionStorage.setItem("username",data.username)
+                     sessionStorage.setItem("user",JSON.stringify(data))
+                     
                      window.location.reload()
                    }
                    else{
