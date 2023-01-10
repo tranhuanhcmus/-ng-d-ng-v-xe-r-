@@ -636,6 +636,14 @@ hr {
   width: 80%;
   object-fit: cover;
 }
+.booking__product .product-description {
+  text-align: justify;
+  font-size: 1.2rem;
+  text-indent: 3rem;
+}
+.booking__product .product-description::first-letter {
+  font-size: 2rem;
+}
 
 .booking__steps {
   background-color: #e6f5ff;

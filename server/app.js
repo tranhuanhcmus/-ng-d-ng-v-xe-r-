@@ -14,7 +14,27 @@ const hbs = create({
     layoutsDir: path.join(__dirname, "views/layout"),
     defaultLayout: "main",
     partialsDir: path.join(__dirname, "views/partials"),
-    helpers: {},
+    helpers: {
+        range: (start, end, step) => {
+            if (step === 0) {
+                step = 1;
+            }
+            if (!step) {
+                step = end > start ? 1 : -1;
+            }
+            let result = [];
+            if (step > 0) {
+                for (let i = start; i <= end; i += step) {
+                    result.push(i);
+                }
+            } else {
+                for (let i = start; i >= end; i += step) {
+                    result.push(i);
+                }
+            }
+            return result;
+        },
+    },
     runtimeOptions: {
         allowProtoPropertiesByDefault: true,
     },
@@ -43,19 +63,16 @@ app.use("/ticketinfo", require("./routes/ticketinfoRoute"));
 app.get("/createTable", (req, res) => {
     let model = require("./models");
     model.sequelize.sync().then(() => {
-
-
-        res.send('table create');
-
-    })
-})
-// test các hàm database xem có chạy dc ko 
-app.use('/api/benxe', require("./routes/benxe"));
-app.use('/api/user', require("./routes/user"));
-app.use('/api/chuyenxe', require("./routes/chuyenxe"));
-app.use('/api/ct_chuyenxe', require("./routes/ct_chuyenxe"));
-app.use('/api/ct_phieuxe', require("./routes/ct_phieuxe"));
-app.use('/api/', require("./routes/diemdon"));
+        res.send("table create");
+    });
+});
+// test các hàm database xem có chạy dc ko
+app.use("/api/benxe", require("./routes/benxe"));
+app.use("/api/user", require("./routes/user"));
+app.use("/api/chuyenxe", require("./routes/chuyenxe"));
+app.use("/api/ct_chuyenxe", require("./routes/ct_chuyenxe"));
+app.use("/api/ct_phieuxe", require("./routes/ct_phieuxe"));
+app.use("/api/", require("./routes/diemdon"));
 
 // 404 page
 app.use((req, res) => {

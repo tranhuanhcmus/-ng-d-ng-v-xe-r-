@@ -6,6 +6,10 @@
         <button class="btn btn-sm w-100">
           <i class="fa-solid fa-location-dot mr-2"></i>Xem điểm đón trên bản đồ
         </button>
+
+        {{#each data.checked}}
+          <span class="checkedSeat" style="display: none;">{{this}}</span>
+        {{/each}}
       </div>
     </div>
     <div class="row booking__main">
@@ -13,7 +17,7 @@
         <div class="booking__section-title">
           <div class="w-75">
             <i class="fa-solid fa-bus"></i>
-            <span>Chặng: <b>Nha Trang - Sài Gòn</b> (273) </span>
+            <span>Chặng: <b>{{data.start}} -{{data.end}}</b>  </span>
           </div>
         </div>
 
@@ -21,15 +25,15 @@
           <!-- Product header -->
           <article class="row product-header">
             <section class="col-6 text-center">
-              <span><h1>Binh Minh Bus</h1></span>
-              <p>Limousin giường phòng 22 chỗ</p>
-              <span><h1>450.000</h1></span>
+              <span><h1>{{data.nhaxe}}</h1></span>
+              <p>{{data.type}}</p>
+              <span><h2>Giá :</h2> <h1 id="price">{{data.price}}</h1></span>
             </section>
 
             <section class="col-5 m-auto">
               <div class="d-flex justify-content-between">
-                <span>VP Sài Gòn</span>
-                <span>VP Nha Trang</span>
+                <span>{{data.start}}</span>
+                <span>{{data.end}}</span>
               </div>
               <div
                 class="icon-section d-flex justify-content-around my-3 align-items-center"
@@ -44,14 +48,16 @@
                 <i class="fa-solid fa-circle"></i>
                 <i class="fa-solid fa-location-dot"></i>
               </div>
-              <div class="d-flex justify-content-between">
-                <span>11:00</span>
-                <span>21:00</span>
+              <div class="d-flex justify-content-center">
+                <h2 class="mt-4" style="color: black;">{{data.time}}</h2>
+                
               </div>
             </section>
           </article>
-          <img src="./images/Booking/garage.png" alt="" />
-
+          <img src={{data.img}} alt="" />
+          <p class="product-description">
+            {{data.description}}
+          </p>
         </div>
 
 
@@ -134,74 +140,19 @@
                     <div class="w-100 my-1 text-center">
                       <i class="fa-solid fa-circle-notch"></i>
                     </div>
-                    <div class="w-50 my-1">
-                      <div position="0" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="1" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="2" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="3" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="4" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="5" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="6" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="7" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="8" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="9" class="seat-icon m-auto"></div>
-                    </div>
+                      {{#each (range 1 10 1)}}
+                        <div class="w-50 my-1">
+                          <div position="{{this}}" class="seat-icon m-auto"></div>
+                        </div>
+                      {{/each}}
+                    
                   </div>
                   <div class="col-2 m-auto seats-model">
-                    <div class="w-50 my-1">
-                      <div position="10" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="11" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="12" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="13" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="14" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="15" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="16" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="17" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="18" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="19" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="20" class="seat-icon m-auto"></div>
-                    </div>
-                    <div class="w-50 my-1">
-                      <div position="21" class="seat-icon m-auto"></div>
-                    </div>
+                     {{#each (range 11 22 1)}}
+                        <div class="w-50 my-1">
+                          <div position="{{this}}" class="seat-icon m-auto"></div>
+                        </div>
+                      {{/each}}
                   </div>
                 </div>
                 <div class="total-price d-flex">
@@ -221,109 +172,58 @@
                     <h3>Điểm đón</h3>
 
                     <section class="container">
-                      <div class="location-item">
-                        <div class="d-flex align-items-center">
-                          <input
-                            required
-                            type="radio"
-                            name="start-point"
-                            form="SubmitForm"
-                            value="SG1"
-                          />
-                          <label for=""> <b>20:30</b> VP Sài Gòn </label>
-                        </div>
-                        <div class="ml-4 mt-2">
-                          <i class="fa-solid fa-location-dot"></i>
-                          <span>
-                            85C Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh, Quận 1,
-                            Hồ Chí Minh
-                          </span>
 
+                      {{#each data.startDes}}
+                        <div class="location-item">
+                          <div class="d-flex align-items-center">
+                            <input
+                              required
+                              type="radio"
+                              name="start-point"
+                              form="SubmitForm"
+                              value="VP Sài Gòn"
+                            />
+                            <label for="">{{this}} </label>
+                          </div>
+                          <div class="ml-4 mt-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                              85C Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh, Quận 1,
+                              Hồ Chí Minh
+                            </span>
+
+                          </div>
                         </div>
-                      </div>
-                      <div class="location-item">
-                        <div class="d-flex align-items-center">
-                          <input
-                            required
-                            type="radio"
-                            name="start-point"
-                            form="SubmitForm"
-                            value="SG2"
-                          />
-                          <label for=""> <b>20:30</b> VP Sài Gòn </label>
-                        </div>
-                        <div class="ml-4 mt-2">
-                          <i class="fa-solid fa-location-dot"></i>
-                          <span>
-                            85C Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh, Quận 1,
-                            Hồ Chí Minh
-                          </span>
-                        </div>
-                      </div>
-                      <div class="location-item">
-                        <div class="d-flex align-items-center">
-                          <input
-                            required
-                            type="radio"
-                            name="start-point"
-                            form="SubmitForm"
-                            value="SG3"
-                          />
-                          <label for=""> <b>20:30</b> VP Sài Gòn </label>
-                        </div>
-                        <div class="ml-4 mt-2">
-                          <i class="fa-solid fa-location-dot"></i>
-                          <span>
-                            85C Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh, Quận 1,
-                            Hồ Chí Minh
-                          </span>
-                        </div>
-                      </div>
+                      {{/each}}
 
                     </section>
                   </div>
                   <div class="col-6">
                     <h3>Điểm trả</h3>
                     <section class="container">
-                      <div class="location-item">
-                        <div class="d-flex align-items-center">
-                          <input
-                            required
-                            type="radio"
-                            name="end-point"
-                            form="SubmitForm"
-                            value="BS1"
-                          />
-                          <label for=""> <b>20:30</b> VP BS</label>
-                        </div>
-                        <div class="ml-4 mt-2">
-                          <i class="fa-solid fa-location-dot"></i>
-                          <span>
-                            85C Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh, Quận 1,
-                            Hồ Chí Minh
-                          </span>
-                        </div>
-                      </div>
-                      <div class="location-item">
-                        <div class="d-flex align-items-center">
-                          <input
-                            required
-                            type="radio"
-                            name="end-point"
-                            form="SubmitForm"
-                            value="BS2"
-                          />
-                          <label for=""> <b>20:30</b> VP BS </label>
-                        </div>
-                        <div class="ml-4 mt-2">
-                          <i class="fa-solid fa-location-dot"></i>
-                          <span>
-                            85C Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh, Quận 1,
-                            Hồ Chí Minh
-                          </span>
-                        </div>
-                      </div>
 
+                      {{#each data.endDes}}
+                        <div class="location-item">
+                          <div class="d-flex align-items-center">
+                            <input
+                              required
+                              type="radio"
+                              name="end-point"
+                              form="SubmitForm"
+                              value="VP Nha Trang"
+                            />
+                            <label for="">{{this}}</label>
+                          </div>
+                          <div class="ml-4 mt-2">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>
+                              85C Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh, Quận 1,
+                              Hồ Chí Minh
+                            </span>
+                          </div>
+                        </div>
+                      {{/each}}
+                    
                     </section>
                   </div>
 
