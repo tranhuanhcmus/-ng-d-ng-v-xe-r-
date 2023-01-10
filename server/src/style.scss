@@ -251,6 +251,7 @@ hr {
     height: 100vh;
     font-weight: bold;
     color: green;
+    left:0;
 }
 
 .failure {
@@ -570,12 +571,12 @@ hr {
     .product-header {
         h1 {
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 2rem;
             @include text-gradient(root.$color-purple,
             root.$color-blue);
         }
         p {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: root.$color-black;
         }
         section:last-child {
@@ -701,7 +702,7 @@ btn-primary {
     /* Hidden by default */
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 100;
     /* Sit on top */
     left: 0;
     top: 0;
