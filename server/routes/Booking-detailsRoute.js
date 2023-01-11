@@ -22,7 +22,7 @@ router.get("/:id", async (req, res, next) => {
     const response = await request(
         `http://localhost:3000/api/chuyenxe/${req.params.id}`
     );
-    const chuyenxe = await JSON.parse(response);
+    const chuyenxe = await JSON.parse(response)[0];
 
     var checkArr;
     const checkedString = chuyenxe.checked;
@@ -31,20 +31,27 @@ router.get("/:id", async (req, res, next) => {
         checkArr = checkArr.map((i) => parseInt(i));
     } else checkArr = [];
 
+    const timeStamp = chuyenxe.ngaykhoihanh;
+    const date = new Date(timeStamp);
+    const formattedDate = date.toLocaleDateString("en-US", {
+        day: "numeric",
+        month: "numeric",
+        year: "numeric",
+    });
+
     const newData = await {
-        start: chuyenxe.thanhphodiId, //sai gon
-        end: chuyenxe.thanhphodenId,
-        nhaxe: chuyenxe.nhaxeId,
+        start: chuyenxe.tpdi, //sai gon
+        end: chuyenxe.tpden,
+        nhaxe: chuyenxe.tennhaxe,
         price: chuyenxe.giave,
-        startDes: ["VP Sài Gòn 1", "VP Sài Gòn 2"],
-        endDes: ["VP Nha Trang 1", "VP Nha Trang 2"],
-        // timeDate:chuyenxe.ngaykhoihanh,
-        // time:chuyenxe.tgkhoihanh,
-        time: "11:00 Ngày 1/10/2022",
+        startDes: chuyenxe.diemdonsdi.split(","),
+        endDes: chuyenxe.diemdonsden.split(","),
+        date: formattedDate,
+        timeStart: chuyenxe.tgkhoihanh,
+        timeEnd: chuyenxe.tgketthuc,
         img: "https://plus.unsplash.com/premium_photo-1661760200219-6bfe3f0d72a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
         type: chuyenxe.type,
         checked: checkArr,
-
         description: chuyenxe.motachinhsach,
     };
 

@@ -33,8 +33,8 @@ const loadSeats = (seats) => {
                 document.getElementById("TOTAL").innerText =
                     total + (isOn ? 1 : -1) * price;
                 if (isOn == 1) {
-                    const text = document.getElementById("SEATS").innerText;
                     const pos = seat.getAttribute("position");
+                    const text = document.getElementById("SEATS").innerText;
                     document.getElementById("SEATS").innerText = `${text} ${pos}`;
                 }
             });
@@ -50,6 +50,7 @@ testBtn.addEventListener("click", (e) => {
     const form = document.getElementById("SubmitForm");
 
     var chk_status = form.checkValidity();
+
     form.reportValidity();
 
     if (chk_status) {
@@ -63,10 +64,15 @@ testBtn.addEventListener("click", (e) => {
         const email = document.querySelector('input[id="email"]').value;
 
         const price = document.getElementById("TOTAL").innerText;
-        var seats = document.getElementById("SEATS").innerText.split(" ");
-        seats.shift();
-        // seats = seats.map((seat) => parseInt(seat));
 
+        var seats = document.getElementById("SEATS").innerText.split(" ");
+        if (seats[0] == "") seats.shift();
+
+        // seats = seats.map((seat) => parseInt(seat));
+        if (price == 0) {
+            alert("Hãy chọn chỗ ngồi");
+            return;
+        }
         const result = { start, end, name, tel, email, price, seats };
         console.log(result);
         // window.location.replace("/paymentmethods");
