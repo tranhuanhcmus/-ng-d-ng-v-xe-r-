@@ -182,26 +182,6 @@
                   <div class="col-6 d-flex justify-content-center align-items-center">
                     <a href="/Booking-details/{{id}}" class="btn btn-lg">Chọn chuyến</a>
                   </div>
-                  <div class="icon-section d-flex justify-content-around my-3 align-items-center">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <span>{{hdi}}</span>
-                    <span>{{hden}}</span>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="col-6 text-center">
-                      <span class="price">{{price}} đ</span>
-                    </div>
-                    <div class="col-6 d-flex justify-content-center align-items-center">
-                      <a href="/Booking-details/{{id}}" class="btn btn-lg">Chọn
-                        chuyến</a>
-                    </div>
-                  </div>
               </section>
             </div>
           </div>
@@ -260,6 +240,8 @@
       }
     }
     object['PriceTicket'].push(value.value);
+
+    form.href = value;
     console.log(object);
 
 
