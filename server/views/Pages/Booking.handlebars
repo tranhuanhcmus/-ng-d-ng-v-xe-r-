@@ -15,7 +15,7 @@
             <span>Bộ lọc</span>
           </div>
 
-          <span class="filter-btn" id="filter">Lọc</span>
+          <a class="filter-btn" id="filter">Lọc</a>
           <span class="reset-btn" id="reset">Reset</span>
         </div>
 
@@ -240,6 +240,9 @@
       }
     }
     object['PriceTicket'].push(value.value);
+    if (object['DateGo'] != "") {
+      form.href = "/Booking?DateGo=" + String(object['DateGo'][0]);
+    }
     console.log(object);
 
 
