@@ -8,9 +8,18 @@ const controller = {
     create: async (req, res) => {
 
         try {
-            const ct_chuyenxe = await models.CT_Chuyenxe(req.body);
-            await ct_chuyenxe.save();
-            res.status(200).json(ct_chuyenxe);
+            const newct_chuyenxe = await models.CT_Chuyenxe.create(
+                {
+                    tgkhoihanh: req.body.tgkhoihanh,
+                    tgketthuc: req.body.tgketthuc,
+                    ngaykhoihanh: req.body.ngaykhoihanh,
+                    stt: req.body.stt,
+                    chuyenxeId: req.chuyenxeId
+                },
+            );
+            newct_chuyenxe.save();
+
+            res.status(200).json(newct_chuyenxe);
         } catch (err) {
             res.status(500).json(err);
         }
@@ -20,31 +29,20 @@ const controller = {
 
         try {
             const ct_chuyenxe = await models.CT_Chuyenxe.findAll();
-            res.status(200).json(ct_chuyenxe);
+            // res.status(200).json(benxe);
+            res.json(ct_chuyenxe);
         } catch (err) {
             res.status(500).json(err);
         }
     },
+    //tim điểm đón dựa vào ten bến xe
 
-    findOne: async (req, res) => {
-
-        try {
-            const ct_chuyenxe = await models.CT_Chuyenxe.findOne(
-                {
-                    where:
-                        { id: req.params.id }
-                }
-            );
-            res.status(200).json(benxe);
-        } catch (err) {
-            res.status(500).json(err);
-        }
-    },
     findByPk: async (req, res) => {
 
         try {
-            const ct_chuyenxe = await models.Benxe.ct_chuyenxe(req.params.idct_chuyenxe)
+            const ct_chuyenxe = await models.CT_Chuyenxe.findByPk(req.params.idct_chuyenxe)
             res.status(200).json(ct_chuyenxe);
+
         } catch (err) {
             res.status(500).json(err);
         }
@@ -52,9 +50,10 @@ const controller = {
     delete: async (req, res) => {
 
         try {
-            const ct_chuyenxe = awaitmodels.CT_Chuyenxe.destroy({
-                where: { id: req.params.ct_chuyenxe }
+            const ct_chuyenxe = await models.CT_Chuyenxe.destroy({
+                where: { id: req.params.idct_chuyenxe }
             })
+
             res.status(200).json(ct_chuyenxe);
         } catch (err) {
             res.status(500).json(err);
@@ -65,20 +64,19 @@ const controller = {
         try {
             const ct_chuyenxe = await models.CT_Chuyenxe.update(
                 {
-                    tgkhoihanh: req.params.tgkhoihanh,
-                    tgketthuc: req.params.tgketthuc,
-                    ngaykhoihanh: req.params.ngaykhoihanh,
-                    stt: req.params.stt
+                    tgkhoihanh: req.body.tgkhoihanh,
+                    tgketthuc: req.body.tgketthuc,
+                    ngaykhoihanh: req.body.ngaykhoihanh,
+                    stt: req.body.stt,
+                    chuyenxeId: req.chuyenxeId
                 }, {
-                where: { id: req.params.idct_chuyenxe }
+                where: { id: req.params.idct_chuyenxe },
+
             })
             res.status(200).json(ct_chuyenxe);
         } catch (err) {
             res.status(500).json(err);
         }
     },
-
-
-
 }
 module.exports = controller;

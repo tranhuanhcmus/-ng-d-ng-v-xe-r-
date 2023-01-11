@@ -25,7 +25,7 @@
   }
 }
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .main-bg {
@@ -264,6 +264,7 @@ hr {
   height: 100vh;
   font-weight: bold;
   color: green;
+  left: 0;
 }
 .success button {
   border-radius: 10px;
@@ -605,13 +606,13 @@ hr {
 }
 .booking__product .product-header h1 {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   background: -webkit-linear-gradient(right, #605dec, #2a26d9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .booking__product .product-header p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: black;
 }
 .booking__product .product-header section:last-child {
@@ -635,6 +636,14 @@ hr {
   border-radius: 0 30px;
   width: 80%;
   object-fit: cover;
+}
+.booking__product .product-description {
+  text-align: justify;
+  font-size: 1.2rem;
+  text-indent: 3rem;
+}
+.booking__product .product-description::first-letter {
+  font-size: 2rem;
 }
 
 .booking__steps {
@@ -721,7 +730,7 @@ btn-primary {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 100;
   /* Sit on top */
   left: 0;
   top: 0;
