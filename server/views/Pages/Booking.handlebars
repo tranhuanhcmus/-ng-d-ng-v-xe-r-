@@ -15,7 +15,7 @@
             <span>Bộ lọc</span>
           </div>
 
-          <span class="filter-btn" id="filter">Lọc</span>
+          <a class="filter-btn" id="filter">Lọc</a>
           <span class="reset-btn" id="reset">Reset</span>
         </div>
 
@@ -52,14 +52,7 @@
 
           <div class="option-box">
             <span class="option-title mb-2"> Giá vé </span>
-            <input
-              type="range"
-              id="rangeofvalue"
-              name="price"
-              min="0"
-              max="100"
-              value="10"
-            />
+            <input type="range" id="rangeofvalue" name="price" min="0" max="100" value="10" />
             <div class="d-flex justify-content-between w-75 m-auto">
               <span>0 VND</span>
               <span>100.000 VND </span>
@@ -76,10 +69,10 @@
 
             <div class="check-list my-2 w-100 text-left">
               {{#each Brand}}
-                <div class="check-item brand">
-                  <input type="checkbox" name="garage-1" value="{{this}}" />
-                  <label for="garage-1">{{this}}</label><br />
-                </div>
+              <div class="check-item brand">
+                <input type="checkbox" name="garage-1" value="{{this}}" />
+                <label for="garage-1">{{this}}</label><br />
+              </div>
               {{/each}}
 
             </div>
@@ -89,10 +82,10 @@
 
             <div class="check-list my-2 w-100 text-left">
               {{#each Place}}
-                <div class="check-item location-1">
-                  <input type="checkbox" name="location-1" value="{{this}}" />
-                  <label for="location-1"> {{this}}</label><br />
-                </div>
+              <div class="check-item location-1">
+                <input type="checkbox" name="location-1" value="{{this}}" />
+                <label for="location-1"> {{this}}</label><br />
+              </div>
               {{/each}}
             </div>
           </div>
@@ -101,10 +94,10 @@
 
             <div class="check-list my-2 w-100 text-left">
               {{#each Place}}
-                <div class="check-item location-2">
-                  <input type="checkbox" name="location-1" value="{{this}}" />
-                  <label for="location-1">{{this}}</label><br />
-                </div>
+              <div class="check-item location-2">
+                <input type="checkbox" name="location-1" value="{{this}}" />
+                <label for="location-1">{{this}}</label><br />
+              </div>
               {{/each}}
             </div>
           </div>
@@ -113,15 +106,10 @@
 
             <div class="my-2 w-75 text-left m-auto">
               {{#each TypeBed}}
-                <div class="check-item chair">
-                  <input
-                    type="checkbox"
-                    id="chair1"
-                    name="type-bed"
-                    value="{{this}}"
-                  />
-                  <label for="chair1"> {{this}}</label><br />
-                </div>
+              <div class="check-item chair">
+                <input type="checkbox" id="chair1" name="type-bed" value="{{this}}" />
+                <label for="chair1"> {{this}}</label><br />
+              </div>
               {{/each}}
 
             </div>
@@ -194,33 +182,9 @@
                   <div class="col-6 d-flex justify-content-center align-items-center">
                     <a href="/Booking-details/{{id}}" class="btn btn-lg">Chọn chuyến</a>
                   </div>
-                  <div
-                    class="icon-section d-flex justify-content-around my-3 align-items-center"
-                  >
-                    <i class="fa-solid fa-location-dot"></i>
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-circle"></i>
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <span>{{hdi}}</span>
-                    <span>{{hden}}</span>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="col-6 text-center">
-                      <span class="price">{{price}} đ</span>
-                    </div>
-                    <div
-                      class="col-6 d-flex justify-content-center align-items-center"
-                    >
-                      <a href="/Booking-details/{{id}}" class="btn btn-lg">Chọn
-                        chuyến</a>
-                    </div>
-                  </div>
-                </section>
-              </div>
+              </section>
             </div>
+          </div>
           {{/each}}
 
           <div class="booking-list__item">
@@ -234,61 +198,113 @@
 </section>
 
 <script>
-  const form = document.getElementById('filter'); const reset =
-  document.getElementById('reset'); const form1 =
-  document.getElementById('BlankChair'); const checkItemChair =
-  document.getElementsByClassName("check-item chair"); const checkItemBrand =
-  document.getElementsByClassName("check-item brand"); const checkItemLocation1
-  = document.getElementsByClassName("check-item location-1"); const
-  checkItemLocation2 = document.getElementsByClassName("check-item location-2");
-  const SelectTime = document.getElementById("list-time"); const value
-  =document.getElementById("rangeofvalue"); var object = { TimeGo: [],
-  NumberofChair: [], NumerBrand: [], NumberLocation1: [], NumberLocation2: [],
-  GheTrong: [], PriceTicket: [] }; // Form submit event function filterItems(e)
-  { object['GheTrong'].push(form1.value); for (i = 0; i < checkItemChair.length;
-  i++) { if (checkItemChair[i].querySelector('input[name="type-bed"]:checked'))
-  {
-  console.log(checkItemChair[i].querySelector('input[name="type-bed"]:checked').value);
-  object['NumberofChair'].push(checkItemChair[i].querySelector('input[name="type-bed"]:checked').value);
-  } } for (i = 0; i < checkItemBrand.length; i++) { if
-  (checkItemBrand[i].querySelector('input[name="garage-1"]:checked')) {
-  console.log(checkItemBrand[i].querySelector('input[name="garage-1"]:checked').value);
-  object['NumerBrand'].push(checkItemBrand[i].querySelector('input[name="garage-1"]:checked').value);
-  } } for (i = 0; i < checkItemLocation1.length; i++) { if
-  (checkItemLocation1[i].querySelector('input[name="location-1"]:checked')) {
-  console.log(checkItemLocation1[i].querySelector('input[name="location-1"]:checked').value);
-  object['NumberLocation1'].push(checkItemLocation1[i].querySelector('input[name="location-1"]:checked').value);
-  } } for (i = 0; i < checkItemLocation2.length; i++) { if
-  (checkItemLocation2[i].querySelector('input[name="location-1"]:checked')) {
-  console.log(checkItemLocation2[i].querySelector('input[name="location-1"]:checked').value);
-  object['NumberLocation2'].push(checkItemLocation2[i].querySelector('input[name="location-1"]:checked').value);
-  } } object['PriceTicket'].push(value.value); console.log(object); } function
-  select(e) { console.log(object); if (e.target.className == "active") {
-  e.target.className = ""; const index =
-  object['TimeGo'].indexOf(e.target.innerText); if (index > -1) {
-  object['TimeGo'].splice(index, 1); } } else { if
-  (e.target.innerText.search("Giờ đi") == -1) {
-  object['TimeGo'].push(e.target.innerText); object['TimeGo'].forEach(function
-  (item) { if (object['TimeGo'].indexOf(item) < 0) {
-  object['TimeGo'].push(item); } }); e.target.className = "active" } } }
-  function resetitem(e) { object = { TimeGo: [], NumberofChair: [], NumerBrand:
-  [], NumberLocation1: [], NumberLocation2: [], GheTrong: [], PriceTicket: [] };
-  SelectTime.querySelectorAll('.SelectTime section').forEach(box => {
-  box.className = ''; }); form1.value = ""; for (i = 0; i <
-  checkItemChair.length; i++) { if
-  (checkItemChair[i].querySelector('input[name="type-bed"]:checked')) {
-  console.log(checkItemChair[i].querySelector('input[name="type-bed"]:checked').checked
-  = false); } } for (i = 0; i < checkItemBrand.length; i++) { if
-  (checkItemBrand[i].querySelector('input[name="garage-1"]:checked')) {
-  console.log(checkItemBrand[i].querySelector('input[name="garage-1"]:checked').checked
-  = false); } } for (i = 0; i < checkItemLocation1.length; i++) { if
-  (checkItemLocation1[i].querySelector('input[name="location-1"]:checked')) {
-  console.log(checkItemLocation1[i].querySelector('input[name="location-1"]:checked').checked
-  = false); } } for (i = 0; i < checkItemLocation2.length; i++) { if
-  (checkItemLocation2[i].querySelector('input[name="location-1"]:checked')) {
-  console.log(checkItemLocation2[i].querySelector('input[name="location-1"]:checked').checked
-  = false); } } } reset.addEventListener('click', resetitem);
-  SelectTime.addEventListener('click', select); form.addEventListener('click',
-  filterItems);
+  const form = document.getElementById('filter');
+  const reset = document.getElementById('reset');
+  const form1 = document.getElementById('DateGo');
+  const checkItemChair = document.getElementsByClassName("check-item chair");
+  const checkItemBrand = document.getElementsByClassName("check-item brand");
+  const checkItemLocation1 = document.getElementsByClassName("check-item location-1");
+  const checkItemLocation2 = document.getElementsByClassName("check-item location-2");
+  const SelectTime = document.getElementById("list-time")
+  const value = document.getElementById("rangeofvalue")
+  var object = { TimeGo: [], NumberofChair: [], NumerBrand: [], NumberLocation1: [], NumberLocation2: [], DateGo: [], PriceTicket: [] };
+
+  // Form submit event
+  function filterItems(e) {
+
+    object['DateGo'].push(form1.value);
+    for (i = 0; i < checkItemChair.length; i++) {
+      if (checkItemChair[i].querySelector('input[name="type-bed"]:checked')) {
+        console.log(checkItemChair[i].querySelector('input[name="type-bed"]:checked').value);
+        object['NumberofChair'].push(checkItemChair[i].querySelector('input[name="type-bed"]:checked').value);
+
+      }
+    }
+
+    for (i = 0; i < checkItemBrand.length; i++) {
+      if (checkItemBrand[i].querySelector('input[name="garage-1"]:checked')) {
+        console.log(checkItemBrand[i].querySelector('input[name="garage-1"]:checked').value);
+        object['NumerBrand'].push(checkItemBrand[i].querySelector('input[name="garage-1"]:checked').value);
+      }
+    }
+    for (i = 0; i < checkItemLocation1.length; i++) {
+      if (checkItemLocation1[i].querySelector('input[name="location-1"]:checked')) {
+        console.log(checkItemLocation1[i].querySelector('input[name="location-1"]:checked').value);
+        object['NumberLocation1'].push(checkItemLocation1[i].querySelector('input[name="location-1"]:checked').value);
+      }
+    }
+    for (i = 0; i < checkItemLocation2.length; i++) {
+      if (checkItemLocation2[i].querySelector('input[name="location-1"]:checked')) {
+        console.log(checkItemLocation2[i].querySelector('input[name="location-1"]:checked').value);
+        object['NumberLocation2'].push(checkItemLocation2[i].querySelector('input[name="location-1"]:checked').value);
+      }
+    }
+    object['PriceTicket'].push(value.value);
+
+    form.href = value;
+    console.log(object);
+
+
+  }
+
+
+  function select(e) {
+
+    console.log(object);
+    if (e.target.className == "active") {
+      e.target.className = "";
+      const index = object['TimeGo'].indexOf(e.target.innerText);
+      if (index > -1) {
+        object['TimeGo'].splice(index, 1);
+      }
+
+    }
+    else {
+      if (e.target.innerText.search("Giờ đi") == -1) {
+        object['TimeGo'].push(e.target.innerText);
+        object['TimeGo'].forEach(function (item) {
+          if (object['TimeGo'].indexOf(item) < 0) {
+            object['TimeGo'].push(item);
+          }
+        });
+        e.target.className = "active"
+      }
+    }
+
+
+  }
+  function resetitem(e) {
+    object = { TimeGo: [], NumberofChair: [], NumerBrand: [], NumberLocation1: [], NumberLocation2: [], GheTrong: [], PriceTicket: [] };
+    SelectTime.querySelectorAll('.SelectTime section').forEach(box => {
+      box.className = '';
+    });
+    form1.value = "";
+    for (i = 0; i < checkItemChair.length; i++) {
+      if (checkItemChair[i].querySelector('input[name="type-bed"]:checked')) {
+        console.log(checkItemChair[i].querySelector('input[name="type-bed"]:checked').checked = false);
+      }
+    }
+    for (i = 0; i < checkItemBrand.length; i++) {
+      if (checkItemBrand[i].querySelector('input[name="garage-1"]:checked')) {
+        console.log(checkItemBrand[i].querySelector('input[name="garage-1"]:checked').checked = false);
+      }
+    }
+    for (i = 0; i < checkItemLocation1.length; i++) {
+      if (checkItemLocation1[i].querySelector('input[name="location-1"]:checked')) {
+        console.log(checkItemLocation1[i].querySelector('input[name="location-1"]:checked').checked = false);
+      }
+    }
+    for (i = 0; i < checkItemLocation2.length; i++) {
+      if (checkItemLocation2[i].querySelector('input[name="location-1"]:checked')) {
+        console.log(checkItemLocation2[i].querySelector('input[name="location-1"]:checked').checked = false);
+      }
+    }
+  }
+  reset.addEventListener('click', resetitem);
+
+  SelectTime.addEventListener('click', select);
+
+
+  form.addEventListener('click', filterItems);
 
 </script>
