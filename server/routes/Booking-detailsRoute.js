@@ -4,7 +4,7 @@ var express = require("express");
 const { NUMBER } = require("sequelize");
 var router = express.Router();
 
-router.get("/:id", async(req, res, next) => {
+router.get("/:id", async (req, res, next) => {
     const data = {
         start: "Nha Trang",
         end: "Sài Gòn",

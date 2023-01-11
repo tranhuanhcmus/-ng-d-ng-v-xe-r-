@@ -1,8 +1,9 @@
 const title = "Testdatabase";
 const models = require("../models");
+const { QueryTypes } = require("sequelize");
 
 const controller = {
-    create: async(req, res) => {
+    create: async (req, res) => {
         try {
             const newchuyenxe = await models.Chuyenxe.create({
                 motachinhsach: req.body.motachinhsach,
@@ -21,26 +22,41 @@ const controller = {
         }
     },
 
-    findAll: async(req, res) => {
+    findAll: async (req, res) => {
         try {
-            const chuyenxe = await models.Chuyenxe.findAll();
-            // res.status(200).json(benxe);
-            res.json(chuyenxe);
+            const chuyenxe = await models.sequelize.query(`
+            select "Chuyenxes".id, "Chuyenxes".type, "Chuyenxes".checked, "tpdi"."tenthanhpho" as "tpdi", "tpden"."tenthanhpho" as "tpden", "tpdi"."diemdons" as "diemdonsdi", "tpden"."diemdons" as "diemdonsden", motachinhsach, src, giave, "Nhaxes".tennhaxe, "CT_Chuyenxes".ngaykhoihanh, "CT_Chuyenxes".tgkhoihanh, "CT_Chuyenxes".tgketthuc 
+            from "Chuyenxes" join "Thanhphos" as "tpdi" on "Chuyenxes"."thanhphodiId" = "tpdi".id join "Thanhphos" as "tpden" on "Chuyenxes"."thanhphodenId" = "tpden".id, "Nhaxes", "CT_Chuyenxes"
+            where "Chuyenxes"."nhaxeId" = "Nhaxes".id and "Chuyenxes".id = "CT_Chuyenxes".id `, {
+                replacements: {},
+                type: QueryTypes.SELECT,
+            }
+            );
+            res.status(200).json(chuyenxe);
         } catch (err) {
             res.status(500).json(err);
         }
     },
     //tim điểm đón dựa vào ten bến xe
 
-    findByPk: async(req, res) => {
+    findByPk: async (req, res) => {
         try {
-            const chuyenxe = await models.Chuyenxe.findByPk(req.params.idchuyenxe);
+            const chuyenxe = await models.sequelize.query(`
+                select "Chuyenxes".id, "Chuyenxes".type, "Chuyenxes".checked, "tpdi"."tenthanhpho" as "tpdi", "tpden"."tenthanhpho" as "tpden", "tpdi"."diemdons" as "diemdonsdi", "tpden"."diemdons" as "diemdonsden", motachinhsach, src, giave, "Nhaxes".tennhaxe, "CT_Chuyenxes".ngaykhoihanh, "CT_Chuyenxes".tgkhoihanh, "CT_Chuyenxes".tgketthuc 
+                from "Chuyenxes" join "Thanhphos" as "tpdi" on "Chuyenxes"."thanhphodiId" = "tpdi".id join "Thanhphos" as "tpden" on "Chuyenxes"."thanhphodenId" = "tpden".id, "Nhaxes", "CT_Chuyenxes"
+                where "Chuyenxes"."nhaxeId" = "Nhaxes".id and "Chuyenxes".id = "CT_Chuyenxes".id and "Chuyenxes".id = ${req.params.idchuyenxe}`, {
+                replacements: {},
+                type: QueryTypes.SELECT,
+            }
+            );
+
             res.status(200).json(chuyenxe);
         } catch (err) {
             res.status(500).json(err);
         }
     },
-    delete: async(req, res) => {
+
+    delete: async (req, res) => {
         try {
             const chuyenxe = await models.Chuyenxe.destroy({
                 where: { id: req.params.idchuyenxe },
@@ -51,7 +67,7 @@ const controller = {
             console.log("error when delete Chuyen xe");
         }
     },
-    update: async(req, res) => {
+    update: async (req, res) => {
         try {
             const chuyenxe = await models.Chuyenxe.update({
                 motachinhsach: req.body.motachinhsach,
