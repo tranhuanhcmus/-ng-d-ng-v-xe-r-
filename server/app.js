@@ -63,6 +63,7 @@ app.use("/ticketinfo", require("./routes/ticketinfoRoute"));
 app.get("/createTable", (req, res) => {
     let model = require("./models");
     model.sequelize.sync().then(() => {
+
         res.send("table create");
     });
 });
@@ -72,7 +73,10 @@ app.use("/api/user", require("./routes/user"));
 app.use("/api/chuyenxe", require("./routes/chuyenxe"));
 app.use("/api/ct_chuyenxe", require("./routes/ct_chuyenxe"));
 app.use("/api/ct_phieuxe", require("./routes/ct_phieuxe"));
-app.use("/api/", require("./routes/diemdon"));
+app.use("/api/diemdon", require("./routes/diemdon"));
+app.use('/api/khachhang', require("./routes/khachhang"));
+app.use('/api/nhaxe', require("./routes/nhaxe"));
+app.use('/api/phieuxe', require("./routes/phieuxe"));
 
 // 404 page
 app.use((req, res) => {
