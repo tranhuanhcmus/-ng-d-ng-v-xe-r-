@@ -19,6 +19,7 @@ router.put('/:idchuyenxe', function (req, res, next) {
 });
 router.get('/', function (req, res, next) {
   controller.findAll(req, res)
+
 });
 
 module.exports = router;

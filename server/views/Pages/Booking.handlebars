@@ -56,9 +56,10 @@
               <span>0 VND</span>
               <span>100.000 VND </span>
             </div>
-            <span class="option-title my-2"> Số ghế trống </span>
+            <span class="option-title my-2"> Ngày khởi hành </span>
 
-            <input class="m-auto text-center rounded-sm w-50" id="BlankChair" type="number" min="1" />
+            <input type="date" id="DateGo" class="form-control m-0 border-0 rounded-0" name="Depart"
+              placeholder="Depart" />
 
           </div>
 
@@ -143,9 +144,9 @@
           {{#each data}}
           <div class="booking-list__item">
             <div class="col-5">
-              <img src={{img}} alt="garage" />
+              <img src={{src}} alt="garage" />
               <span>{{type}}</span>
-              <a href=`/Booking-details/{{id}}`>Thông tin chi tiết</a>
+              <i>{{ngaykhoihanh}}</i>
             </div>
             <div class="col-7">
               <section class="d-flex align-items-center justify-content-around">
@@ -155,13 +156,12 @@
                 <div class="rating">
                   <i class="fa-solid fa-star text-warning"></i>
                   <b>4.5</b>
-                  (273)
                 </div>
               </section>
               <section class="location m-auto">
                 <div class="d-flex justify-content-between">
-                  <span>{{diemdon}}</span>
-                  <span>{{diemtra}}</span>
+                  <span>{{tpdi}}</span>
+                  <span>{{tpden}}</span>
                 </div>
                 <div class="icon-section d-flex justify-content-around my-3 align-items-center">
                   <i class="fa-solid fa-location-dot"></i>
@@ -171,15 +171,15 @@
                   <i class="fa-solid fa-location-dot"></i>
                 </div>
                 <div class="d-flex justify-content-between">
-                  <span>{{hdi}}</span>
-                  <span>{{hden}}</span>
+                  <span>{{tgkhoihanh}}</span>
+                  <span>{{tgketthuc}}</span>
                 </div>
                 <div class="d-flex justify-content-between">
                   <div class="col-6 text-center">
-                    <span class="price">{{price}} đ</span>
+                    <span class="price">{{giave}} đ</span>
                   </div>
                   <div class="col-6 d-flex justify-content-center align-items-center">
-                    <a href=`/Booking-details/{{id}}` class="btn btn-lg">Chọn chuyến</a>
+                    <a href="/Booking-details/{{id}}" class="btn btn-lg">Chọn chuyến</a>
                   </div>
                 </div>
               </section>
@@ -200,20 +200,19 @@
 <script>
   const form = document.getElementById('filter');
   const reset = document.getElementById('reset');
-  const form1 = document.getElementById('BlankChair');
+  const form1 = document.getElementById('DateGo');
   const checkItemChair = document.getElementsByClassName("check-item chair");
   const checkItemBrand = document.getElementsByClassName("check-item brand");
   const checkItemLocation1 = document.getElementsByClassName("check-item location-1");
   const checkItemLocation2 = document.getElementsByClassName("check-item location-2");
   const SelectTime = document.getElementById("list-time")
   const value = document.getElementById("rangeofvalue")
-  var object = { TimeGo: [], NumberofChair: [], NumerBrand: [], NumberLocation1: [], NumberLocation2: [], GheTrong: [], PriceTicket: [] };
+  var object = { TimeGo: [], NumberofChair: [], NumerBrand: [], NumberLocation1: [], NumberLocation2: [], DateGo: [], PriceTicket: [] };
 
   // Form submit event
   function filterItems(e) {
 
-
-    object['GheTrong'].push(form1.value);
+    object['DateGo'].push(form1.value);
     for (i = 0; i < checkItemChair.length; i++) {
       if (checkItemChair[i].querySelector('input[name="type-bed"]:checked')) {
         console.log(checkItemChair[i].querySelector('input[name="type-bed"]:checked').value);
