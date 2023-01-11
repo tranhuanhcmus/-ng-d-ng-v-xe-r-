@@ -53,7 +53,6 @@ app.get("/createTable", (req, res) => {
 app.use('/api/benxe', require("./routes/benxe"));
 app.use('/api/user', require("./routes/user"));
 app.use('/api/khachhang', require("./routes/khachhang"));
-
 // 404 page
 app.use((req, res) => {
     res.status(404).render("404", { title: "404 Error" });
