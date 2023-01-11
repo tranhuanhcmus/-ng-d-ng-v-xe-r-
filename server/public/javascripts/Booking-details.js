@@ -64,7 +64,7 @@ testBtn.addEventListener("click", (e) => {
         const email = document.querySelector('input[id="email"]').value;
 
         const price = document.getElementById("TOTAL").innerText;
-
+        const id = document.getElementById("id").innerText;
         var seats = document.getElementById("SEATS").innerText.split(" ");
         if (seats[0] == "") seats.shift();
 
@@ -73,7 +73,7 @@ testBtn.addEventListener("click", (e) => {
             alert("Hãy chọn chỗ ngồi");
             return;
         }
-        const result = { start, end, name, tel, email, price, seats };
+        const result = { start, end, name, tel, email, price, seats, id };
         console.log(result);
         // window.location.replace("/paymentmethods");
     }

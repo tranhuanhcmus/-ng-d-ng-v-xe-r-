@@ -25,7 +25,8 @@
 
             <div class="col-6 p-1 SelectTime">
               <section class="">
-                Sáng sớm <br />
+                Sáng sớm
+                <br />
                 0:00-6:00
               </section>
             </div>
@@ -69,7 +70,7 @@
             <div class="check-list my-2 w-100 text-left">
               {{#each Brand}}
               <div class="check-item brand">
-                <input type="checkbox" name="garage-1" value='{{this}}' />
+                <input type="checkbox" name="garage-1" value="{{this}}" />
                 <label for="garage-1">{{this}}</label><br />
               </div>
               {{/each}}
@@ -82,7 +83,7 @@
             <div class="check-list my-2 w-100 text-left">
               {{#each Place}}
               <div class="check-item location-1">
-                <input type="checkbox" name="location-1" value='{{this}}' />
+                <input type="checkbox" name="location-1" value="{{this}}" />
                 <label for="location-1"> {{this}}</label><br />
               </div>
               {{/each}}
@@ -94,7 +95,7 @@
             <div class="check-list my-2 w-100 text-left">
               {{#each Place}}
               <div class="check-item location-2">
-                <input type="checkbox" name="location-1" value='{{this}}' />
+                <input type="checkbox" name="location-1" value="{{this}}" />
                 <label for="location-1">{{this}}</label><br />
               </div>
               {{/each}}
@@ -105,8 +106,8 @@
 
             <div class="my-2 w-75 text-left m-auto">
               {{#each TypeBed}}
-              <div class=" check-item chair ">
-                <input type="checkbox" id="chair1" name="type-bed" value='{{this}}' />
+              <div class="check-item chair">
+                <input type="checkbox" id="chair1" name="type-bed" value="{{this}}" />
                 <label for="chair1"> {{this}}</label><br />
               </div>
               {{/each}}
@@ -181,7 +182,26 @@
                   <div class="col-6 d-flex justify-content-center align-items-center">
                     <a href="/Booking-details/{{id}}" class="btn btn-lg">Chọn chuyến</a>
                   </div>
-                </div>
+                  <div class="icon-section d-flex justify-content-around my-3 align-items-center">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-circle"></i>
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <span>{{hdi}}</span>
+                    <span>{{hden}}</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="col-6 text-center">
+                      <span class="price">{{price}} đ</span>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center align-items-center">
+                      <a href="/Booking-details/{{id}}" class="btn btn-lg">Chọn
+                        chuyến</a>
+                    </div>
+                  </div>
               </section>
             </div>
           </div>
@@ -240,9 +260,6 @@
       }
     }
     object['PriceTicket'].push(value.value);
-    if (object['DateGo'] != "") {
-      form.href = "/Booking?DateGo=" + String(object['DateGo'][0]);
-    }
     console.log(object);
 
 

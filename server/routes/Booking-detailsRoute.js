@@ -1,7 +1,6 @@
-const chuyenxe = require("../controllers/chuyenxeController");
 const request = require("request-promise");
 var express = require("express");
-const { NUMBER } = require("sequelize");
+
 var router = express.Router();
 
 router.get("/:id", async (req, res, next) => {
@@ -40,6 +39,7 @@ router.get("/:id", async (req, res, next) => {
     });
 
     const newData = await {
+        id: chuyenxe.id,
         start: chuyenxe.tpdi, //sai gon
         end: chuyenxe.tpden,
         nhaxe: chuyenxe.tennhaxe,
